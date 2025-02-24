@@ -4,7 +4,6 @@ import argparse
 import json
 import sympy
 import random
-import re
 
 from trick_rules import *
 from fusion.operations import Operations

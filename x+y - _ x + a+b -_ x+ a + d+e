@@ -1,0 +1,45 @@
+x+y - > x + a+b -> x+ a + d+e
+
+formula = a+b
+orig_var = y
+
+overlap = none
+add = [a, b]
+-1 + 2 = +1
+
+[x, y]
+[x, a, b]
+
+
+round 2:
+formula = b+e
+orig_var = b
+
+overlap = b
+add = [e]
+score = -0+1
+
+[x, y]
+[x, a, b]
+[x, a, b, e]
+
+
+round 3:
+formula = e + 3
+orig_var = e
+
+overlap = e
+add = [3]
+score = -0+1
+
+[x, a, b, e, 3]
+
+round 4:
+formula = e - 3
+orig_var = e
+
+overlap = e
+add = [-3]
+score = -0+1
+
+[x, a, b, e, -3, 3]

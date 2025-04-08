@@ -1,7 +1,5 @@
 from .rule_module import FormulaManipulator
-from trick_rules import arit_prog
 from trick_rules import cubi_sum_diff
-from trick_rules import geom_prog
 from trick_rules import indu_form
 from trick_rules import perf_cube_n_the_form
 from trick_rules import prod_n_diff

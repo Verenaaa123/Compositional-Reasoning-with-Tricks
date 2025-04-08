@@ -10,7 +10,7 @@ class Operations():
     #import pdb;
     def __init__(self):
         self.reset_counters()
-        self.operations_list = [1, 1, 2, 2,2,2, 3, 3, 4, 4,4,4, 4, 4]
+        self.operations_list = [1,2,3,4,5]
         self.formula_manipulator = FormulaManipulator()
         self.local_dict = {
             # 三角函数
@@ -33,8 +33,8 @@ class Operations():
             'k': sp.Symbol('k'),
             
             # 数列相关
-            'S_n': sp.Symbol('S_n'),
-            'a_1': sp.Symbol('a_1'),
+            # 'S_n': sp.Symbol('S_n'),
+            # 'a_1': sp.Symbol('a_1'),
             'q': sp.Symbol('q'),
             'd': sp.Symbol('d'),
             'Q': sp.Symbol('Q'),
@@ -45,7 +45,7 @@ class Operations():
             'Y': sp.Symbol('Y'),
             'U': sp.Symbol('U'),
             'I': sp.Symbol('I'),
-            'O': sp.Order, 
+            'O': sp.Symbol('O'), 
             'P': sp.Symbol('P')
         }
         self.variable_library = [
@@ -53,6 +53,25 @@ class Operations():
             for key in self.local_dict 
             if isinstance(self.local_dict[key], sp.Symbol)
         ]
+
+
+    def get_right_str(self, expr) -> str:
+        if isinstance(expr, (list,tuple)):
+            expr = expr[0].split('=')[1] if '=' in expr[0] else expr
+        elif isinstance(expr, sp.Eq):
+            expr = expr.rhs
+        expr_str = str(expr)  
+        return expr_str
+
+
+    def get_sp_expr(self, expr_str) -> sp.Eq:
+        if isinstance(expr_str, (list,tuple)):
+            expr = expr[0].split('=')[1] if '=' in expr[0] else expr
+        elif isinstance(expr_str, str):
+            expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)
+        expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)  
+        return expr
+
 
 
     def reset_counters(self):
@@ -64,17 +83,9 @@ class Operations():
 
 
     #表达式展开
-    def find_right_operand(self, expression):
-        if isinstance(expression, list):
-            expr = expression[0]
-        elif isinstance(expression, tuple):
-            expr = expression[0]
-        else:
-            expr = expression
-        if isinstance(expr, sp.Eq):
-            expr = expr.rhs 
-        expr_str = str(expr)
-
+    def find_right_operand(self, expr):
+        expr_str = self.get_right_str(expr)
+        expr_lhs = expr.split('=')[0]
         # 移除表达式外层括号
         if expr_str.startswith('(') and expr_str.endswith(')'):
             expr_str = expr_str[1:-1]
@@ -92,31 +103,34 @@ class Operations():
         
         try:
             # 尝试直接解析
-            sympy_expr = parse_expr(expr_str, local_dict=self.local_dict)
-            expanded = expand(sympy_expr)
-            return str(expanded)
+            expr_sp = self.get_sp_expr(expr)
+            expanded = sp.expand(expr_sp,locals=self.local_dict)
+            return f"{expr_lhs} = {sp.sstr(expanded)}"
         except:
             # 如果直接解析失败，尝试分段处理
-            try:
-                parts = expr_str.split('*')
-                processed_parts = []
-                for part in parts:
-                    part = part.strip()
-                    part_expr = parse_expr(part, local_dict=self.local_dict)
-                    processed_parts.append(part_expr)
+            parts = expr_str.split('*')
+            processed_parts = []
+            for part in parts:
+                part = part.strip()
+                part_expr = self.get_sp_expr(expr, local_dict=self.local_dict)
+                processed_parts.append(part_expr)
+            
+            # 重新组合表达式
+            result = processed_parts[0]
+            for part in processed_parts[1:]:
+                result = result * part
                 
-                # 重新组合表达式
-                result = processed_parts[0]
-                for part in processed_parts[1:]:
-                    result = result * part
-                    
-                expanded = expand(result)
-                return str(expanded)
-            except:
-                # 如果所有尝试都失败，返回原始表达式
-                return expr_str
-       
-   
+            expanded = expand(result)
+            
+            return f"{expr_lhs} = {sp.sstr(expanded)}"
+          
+
+    # 合并同类项
+    def combining_similar_terms(self, expr):
+        expr_sp = self.get_sp_expr(expr)
+        combined = sp.collect(expr_sp.rhs)
+        return combined
+
 
     #拼接
     def concatenate_formulas(self, formula, all_tricks, results=None):
@@ -314,6 +328,9 @@ class Operations():
             elif operation == 4:
                 operand_result = self.replace_with_formula(formula, all_tricks)
                 operation_counters['replace_formula'] += 1  # 只需增加计数
+            elif operation == 5:
+                operand_result = self.combining_similar_terms(formula)
+                operation_counters['replace_formula'] += 1
             
             if operand_result is not None:
                 result['fusion_operands'].append({

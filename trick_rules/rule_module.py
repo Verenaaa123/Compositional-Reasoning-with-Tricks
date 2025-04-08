@@ -1,5 +1,7 @@
 import sympy as sp
 from sympy import factor
+from sympy.abc import alpha, beta,gamma, delta, epsilon, zeta, eta, theta,iota, kappa, mu, nu, xi, omicron, pi, rho,sigma, tau, upsilon, phi, chi, psi, omega
+
 import random
 from sympy import Poly
 import re
@@ -25,31 +27,94 @@ class FormulaManipulator:
             # 常用符号
             'pi': sp.Symbol('pi'),
             'alpha': sp.Symbol('alpha'),
-            'beta': sp.Symbol('beta'), 
-            'gamma': sp.Symbol('gamma'), 
-            'theta': sp.Symbol('theta'), 
+            'beta': sp.Symbol('beta'),
+            'gamma': sp.Symbol('gamma'),
+            'delta': sp.Symbol('delta'),
+            'epsilon': sp.Symbol('epsilon'),
+            'zeta': sp.Symbol('zeta'),
+            'eta': sp.Symbol('eta'),
+            'theta': sp.Symbol('theta'),
+            'iota': sp.Symbol('iota'),
+            'kappa': sp.Symbol('kappa'),
+            'lambda': sp.Symbol('lambda'),
+            'mu': sp.Symbol('mu'),
+            'nu': sp.Symbol('nu'),
+            'xi': sp.Symbol('xi'),
+            'omicron': sp.Symbol('omicron'),
+            'pi': sp.Symbol('pi'),
+            'rho': sp.Symbol('rho'),
+            'sigma': sp.Symbol('sigma'),
+            'tau': sp.Symbol('tau'),
+            'upsilon': sp.Symbol('upsilon'),
+            'phi': sp.Symbol('phi'),
+            'chi': sp.Symbol('chi'),
+            'psi': sp.Symbol('psi'),
+            'omega': sp.Symbol('omega'),
+
+            # 大写希腊字母（名称首字母大写）
+            'Alpha': sp.Symbol('Alpha'),
+            'Beta': sp.Symbol('Beta'),
+            'Gamma': sp.Symbol('Gamma'),
+            'Delta': sp.Symbol('Delta'),
+            'Theta': sp.Symbol('Theta'),
+            'Lambda': sp.Symbol('Lambda'),
+            'Sigma': sp.Symbol('Sigma'),
+            'Omega': sp.Symbol('Omega'),
             
             # 基础变量
             'a': sp.Symbol('a'),
             'b': sp.Symbol('b'),
-            'n': sp.Symbol('n'),
-            'k': sp.Symbol('k'),
-            
-            # 数列相关
-            'S_n': sp.Symbol('S_n'),
-            'a_1': sp.Symbol('a_1'),
-            'q': sp.Symbol('q'),
+            'c': sp.Symbol('c'),
             'd': sp.Symbol('d'),
-            'Q': sp.Symbol('Q'),
-            'W': sp.Symbol('W'),
+            'e': sp.Symbol('e'),
+            'f': sp.Symbol('f'),
+            'g': sp.Symbol('g'),
+            'h': sp.Symbol('h'),
+            'i': sp.Symbol('i'),
+            'j': sp.Symbol('j'),
+            'k': sp.Symbol('k'),
+            'l': sp.Symbol('l'),
+            'm': sp.Symbol('m'),
+            'n': sp.Symbol('n'),
+            'o': sp.Symbol('o'),
+            'p': sp.Symbol('p'),
+            'q': sp.Symbol('q'),
+            'r': sp.Symbol('r'),
+            's': sp.Symbol('s'),
+            't': sp.Symbol('t'),
+            'u': sp.Symbol('u'),
+            'v': sp.Symbol('v'),
+            'w': sp.Symbol('w'),
+            'x': sp.Symbol('x'),
+            'y': sp.Symbol('y'),
+            'z': sp.Symbol('z'),
+            'A': sp.Symbol('A'),
+            'B': sp.Symbol('B'),
+            'C': sp.Symbol('C'),
+            'D': sp.Symbol('D'),
             'E': sp.Symbol('E'),
-            'R': sp.Symbol('R'),
-            'T': sp.Symbol('T'),
-            'Y': sp.Symbol('Y'),
-            'U': sp.Symbol('U'),
+            'F': sp.Symbol('F'),
+            'G': sp.Symbol('G'),
+            'H': sp.Symbol('H'),
             'I': sp.Symbol('I'),
-            'O': sp.Order, 
-            'P': sp.Symbol('P')
+            'J': sp.Symbol('J'),
+            'K': sp.Symbol('K'),
+            'L': sp.Symbol('L'),
+            'M': sp.Symbol('M'),
+            'N': sp.Symbol('N'),
+            'O': sp.Symbol('O'),
+            'P': sp.Symbol('P'),
+            'Q': sp.Symbol('Q'),
+            'R': sp.Symbol('R'),
+            'S': sp.Symbol('S'),
+            'T': sp.Symbol('T'),
+            'U': sp.Symbol('U'),
+            'V': sp.Symbol('V'),
+            'W': sp.Symbol('W'),
+            'X': sp.Symbol('X'),
+            'Y': sp.Symbol('Y'),
+            'Z': sp.Symbol('Z')
+            
         }
         self.variable_library = [
             self.local_dict[key] 
@@ -63,7 +128,7 @@ class FormulaManipulator:
         print(f"\n=== 开始解析公式 ===")
         print(f"输入公式: '{formula_str}'")
         
-        formula_str = str(formula_str).replace('==', '=').replace('α','alpha').replace('β','beta').replace('π','pi')
+        # formula_str = str(formula_str).replace('==', '=').replace('α','alpha').replace('β','beta').replace('π','pi')
 
         if '=' in formula_str:
             left, right = formula_str.split('=', 1)
@@ -85,8 +150,13 @@ class FormulaManipulator:
         for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz':
             if c not in self.local_dict:
                 self.local_dict[c] = sp.Symbol(c)
-        greek_letters = ['delta', 'gamma', 'theta', 'lambda', 'mu', 'xi', 'sigma', 'tau', 'phi', 'omega', 'zeta']
-
+        lower_greek = [
+    'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta',
+    'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho',
+    'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega'
+]
+        upper_greek = [name.capitalize() for name in lower_greek]
+        greek_letters = [lower_greek+upper_greek]
         for letter in greek_letters:
             self.local_dict[letter] = sp.Symbol(letter)
         
@@ -105,7 +175,13 @@ class FormulaManipulator:
             if c not in self.local_dict:
                 self.local_dict[c] = sp.Symbol(c)
         
-        greek_letters = ['delta', 'gamma', 'theta', 'lambda', 'mu', 'xi', 'sigma', 'tau', 'phi', 'omega', 'zeta']
+        lower_greek = [
+    'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta',
+    'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho',
+    'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega'
+]
+        upper_greek = [name.capitalize() for name in lower_greek]
+        greek_letters = [lower_greek+upper_greek]
         for letter in greek_letters:
             self.local_dict[letter] = sp.Symbol(letter)
         
@@ -113,22 +189,6 @@ class FormulaManipulator:
             return sp.sympify(sides[1].strip(), locals=self.local_dict)
         return sp.sympify(formula, locals=self.local_dict)
       
-
-
-    # def generate_new_formulas(self, expr, variables, num_samples):  
-    #     newFunctions = []
-    #     if not variables:  # 处理空变量情况
-    #         return newFunctions
-        
-    #     for _ in range(num_samples):
-    #         replace_count = random.randint(1, max(1, len(variables)-1)) if len(variables) > 1 else 1
-    #         selected_vars = random.sample(variables, replace_count)
-            
-    #         substitution = {var: random.randint(1, 20) for var in selected_vars}
-    #         new_expr = expr.subs(substitution)
-    #         newFunctions.append(str(new_expr))
-
-    #     return newFunctions
 
 
     def multiply_with_num(self, formula):

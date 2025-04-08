@@ -20,8 +20,8 @@ all_tricks = {
         f"{a}**3+{b}**3=({a}+{b})*({a}**2-{a}*{b}+{b}**2)": "cubi_sum_diff",
         f"{a}**3-{b}**3=({a}-{b})*({a}**2+{a}*{b}+{b}**2)": "cubi_sum_diff",
         
-        f"{S_n} = {n} * {a_1} + ({n} * ({n} - 1) * {d}) / 2":"arit_prog",
-        f"({a_1}*(1 - {q}**{n}))/(1 - {q})": "geom_prog",
+        # f"{S_n} = {n} * {a_1} + ({n} * ({n} - 1) * {d}) / 2":"arit_prog",
+        # f"({a_1}*(1 - {q}**{n}))/(1 - {q})": "geom_prog",
 
         f"sin(2*{k}*{pi} + {alpha}) = sin({alpha})": "indu_form",
         f"sin(-{alpha}) = -sin({alpha})": "indu_form",

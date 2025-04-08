@@ -57,26 +57,23 @@ class FormulaManipulator:
             if isinstance(self.local_dict[key], sp.Symbol)
         ]
 
+
+
     def parse_user_formula(self, formula_str):
         print(f"\n=== 开始解析公式 ===")
         print(f"输入公式: '{formula_str}'")
         
         formula_str = str(formula_str).replace('==', '=').replace('α','alpha').replace('β','beta').replace('π','pi')
-        
-        try:
-            if '=' in formula_str:
-                left, right = formula_str.split('=', 1)
-                left_expr = sp.sympify(left, locals=self.local_dict, evaluate=False)
-                right_expr = sp.sympify(right, locals=self.local_dict, evaluate=False)
-                expr = sp.Eq(left_expr, right_expr, evaluate=False)  # 禁止自动化简为布尔值
-            else:
-                expr = sp.sympify(formula_str, locals=self.local_dict, evaluate=False)
-            
-            variables = list(expr.free_symbols)
-            return expr, variables
-        except Exception as e:
-            print(f"解析错误: {str(e)}")
-            return None, []
+
+        if '=' in formula_str:
+            left, right = formula_str.split('=', 1)
+            left_expr = sp.sympify(left, locals=self.local_dict, evaluate=False)
+            right_expr = sp.sympify(right, locals=self.local_dict, evaluate=False)
+            expr = sp.Eq(left_expr, right_expr, evaluate=False)  # 禁止自动化简为布尔值
+        else:
+            expr = sp.sympify(formula_str, locals=self.local_dict, evaluate=False)
+        variables = list(expr.free_symbols)
+        return expr,variables
 
 
 
@@ -118,27 +115,27 @@ class FormulaManipulator:
       
 
 
-    def generate_new_formulas(self, expr, variables, num_samples):  
-        newFunctions = []
-        if not variables:  # 处理空变量情况
-            return newFunctions
+    # def generate_new_formulas(self, expr, variables, num_samples):  
+    #     newFunctions = []
+    #     if not variables:  # 处理空变量情况
+    #         return newFunctions
         
-        for _ in range(num_samples):
-            replace_count = random.randint(1, max(1, len(variables)-1)) if len(variables) > 1 else 1
-            selected_vars = random.sample(variables, replace_count)
+    #     for _ in range(num_samples):
+    #         replace_count = random.randint(1, max(1, len(variables)-1)) if len(variables) > 1 else 1
+    #         selected_vars = random.sample(variables, replace_count)
             
-            substitution = {var: random.randint(1, 20) for var in selected_vars}
-            new_expr = expr.subs(substitution)
-            newFunctions.append(str(new_expr))
+    #         substitution = {var: random.randint(1, 20) for var in selected_vars}
+    #         new_expr = expr.subs(substitution)
+    #         newFunctions.append(str(new_expr))
 
-        return newFunctions
+    #     return newFunctions
 
 
     def multiply_with_num(self, formula):
         """对等式两侧乘以同一个随机数/分数，返回字符串形式的等式"""
         if isinstance(formula, sp.Eq):
             lhs, rhs = formula.lhs, formula.rhs
-        else:
+        else:  
             if isinstance(formula, str):
                 if '=' not in formula:
                     return str(formula)  # 非等式直接返回
@@ -242,15 +239,15 @@ class FormulaManipulator:
         
         return f"{left} = {right}" if right else left
 
+
+
     def generate_unified_substitution(self, expr):
         """生成统一的变量替换规则（优先替换为符号库中的其他变量，否则替换为数字）"""
         variables = list(expr.free_symbols)
         if not variables:
-            return {}  # 无变量可替换
+            return {} 
         
         old_var = random.choice(variables)
-        
-        # 从符号库中筛选可替换变量（排除当前变量）
         possible_vars = [var for var in self.variable_library if var != old_var]
         
         if possible_vars:
@@ -258,6 +255,7 @@ class FormulaManipulator:
             return {old_var: new_var}
         else:
             return {old_var: random.randint(1, 10)}
+
 
 
     def replace_with_number(self, formula):
@@ -278,26 +276,25 @@ class FormulaManipulator:
 
 
 
-    def replace_with_variable(self, formula, variables):
-        """将等式中的变量统一替换为数字，返回字符串形式的等式"""
+    def replace_with_variable(self, formula):
         if isinstance(formula, (bool, Boolean)):
             return str(formula)
-        
-        # 解析时添加locals参数
         if isinstance(formula, sp.Eq):
             lhs, rhs = formula.lhs, formula.rhs
         elif isinstance(formula, str) and '=' in formula:
             lhs_str, rhs_str = formula.split('=', 1)
-            lhs = sp.sympify(lhs_str, locals=self.local_dict, evaluate=False) 
-            rhs = sp.sympify(rhs_str, locals=self.local_dict, evaluate=False)  
+            lhs = sp.sympify(lhs_str, locals=self.local_dict, evaluate=False)
+            rhs = sp.sympify(rhs_str, locals=self.local_dict, evaluate=False)
         else:
             expr = sp.sympify(formula, locals=self.local_dict, evaluate=False) if isinstance(formula, str) else formula
             symbols = expr.free_symbols
             if not symbols:
                 return str(expr)
             symbol_to_replace = random.choice(list(symbols))
-            number = random.randint(1, 10)
-            new_expr = expr.subs(symbol_to_replace, number)
+            # 从变量库中选择新变量并转换为符号
+            new_var = random.choice(self.variable_library)
+            new_var_sym = sp.sympify(new_var, locals=self.local_dict)
+            new_expr = expr.subs(symbol_to_replace, new_var_sym)
             return sp.sstr(new_expr)
         
         symbols = lhs.free_symbols
@@ -305,16 +302,21 @@ class FormulaManipulator:
             return f"{sp.sstr(lhs)} = {sp.sstr(rhs)}"
         
         symbol_to_replace = random.choice(list(symbols))
-        number = random.randint(1, 10)
+        # 从变量库中选择新变量并转换为符号
+        new_var = random.choice(self.variable_library)
+        new_var_sym = sp.sympify(new_var, locals=self.local_dict)
         
-        new_lhs = lhs.subs(symbol_to_replace, number)
-        new_rhs = rhs.subs(symbol_to_replace, number)
+        new_lhs = lhs.subs(symbol_to_replace, new_var_sym)
+        new_rhs = rhs.subs(symbol_to_replace, new_var_sym)
         
         return f"{sp.sstr(new_lhs)} = {sp.sstr(new_rhs)}"
-   
+
+
 
     def replace_with_formula(self, formula, all_tricks):
+        # 解析原始公式
         formula_str = str(formula) if not isinstance(formula, str) else formula
+        print(formula_str)
         if '=' in formula_str:
             orig_left, orig_right = formula_str.split('=', 1)
             orig_left_expr = sp.sympify(orig_left.strip(), locals=self.local_dict)
@@ -324,43 +326,27 @@ class FormulaManipulator:
             orig_left_expr = orig_expr
             orig_right_expr = sp.Integer(0)
         
-        # 获取原始公式变量
-        all_vars = list(set(orig_left_expr.free_symbols) | set(orig_right_expr.free_symbols))
-        
-        # 遍历所有技巧公式寻找匹配
         valid_replacements = []
-        for trick_formula in all_tricks.keys():
+        orig_right_vars = orig_right_expr.free_symbols
+        
+        # 遍历所有技巧公式的右侧
+        for trick_formula in all_tricks:
             if '=' in trick_formula:
-                trick_left, trick_right = trick_formula.split('=', 1)
-                trick_left_expr = sp.sympify(trick_left.strip(), locals=self.local_dict)
+                _, trick_right = trick_formula.split('=', 1)
                 trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
-                
-                trick_vars = list(set(trick_left_expr.free_symbols) | set(trick_right_expr.free_symbols))
-                
-                # 变量数量匹配时尝试映射
-                if len(trick_vars) == len(all_vars):
-                    from itertools import permutations
-                    for perm in permutations(trick_vars, len(all_vars)):
-                        var_map = dict(zip(all_vars, perm))
-                        
-                        # 检查是否匹配原始公式结构
-                        if (orig_left_expr.subs(var_map) == trick_left_expr or 
-                            orig_left_expr.subs(var_map) == trick_right_expr):
-                            valid_replacements.append((trick_formula, var_map))
+                trick_left, _ = trick_formula.split('=', 0)
+                trick_left_expr = sp.sympify(trick_left.strip(), locals=self.local_dict)
+            
+                for var in orig_right_vars:
+                    new_right = orig_right_expr.subs(var, trick_right_expr)
+                    new_left = orig_left_expr.subs(var, trick_left_expr)
+                    new_formula = f"{sp.sstr(new_left)} = {sp.sstr(new_right)}"
+                    valid_replacements.append(new_formula)
         
-        # 执行替换
         if valid_replacements:
-            chosen_formula, var_map = random.choice(valid_replacements)
-            left_side, right_side = chosen_formula.split('=', 1)
-            
-            # 反转变量映射
-            reverse_map = {v: k for k, v in var_map.items()}
-            new_left = sp.sympify(left_side.strip()).subs(reverse_map)
-            new_right = sp.sympify(right_side.strip()).subs(reverse_map)
-            
-            return f"{new_left} = {new_right}"
-        
-        return formula_str
+            return random.choice(valid_replacements)
+        else:
+            return formula_str
 
 
 
@@ -532,7 +518,7 @@ class FormulaManipulator:
                 result["original_structure"],
                 result["modified_structure"]
             )
-            result["complexity"]["edit_distance"] = edit_distance  # 直接更新复杂度字段
+            result["edit_distance"] = edit_distance  # 直接更新复杂度字段
         
         return result
 
@@ -573,9 +559,7 @@ class FormulaManipulator:
     def compute_edit_distance(self, struct1, struct2):
         """计算两个结构之间的编辑距离"""
         def get_structure_sequence(struct):
-            """结构转换为序列"""
             sequence = []
-            
             def traverse(d):
                 if isinstance(d, dict):
                     for key in sorted(d.keys()):  # 确保顺序一致
@@ -591,16 +575,16 @@ class FormulaManipulator:
         seq1 = get_structure_sequence(struct1)
         seq2 = get_structure_sequence(struct2)
         
-        # 计算相似度比率（0-100）
         return fuzz.ratio(''.join(seq1), ''.join(seq2))
+
 
 
     def execute_functions(self, user_formula, times=None):
         print(f"\n=== 开始执行变换 ===")
         print(f"输入公式: {user_formula}")
         
-        if times is None:
-            times = random.randint(1, 10)
+        # if times is None:
+        #     times = random.randint(1, 3)
         
         results = []
         score = 0
@@ -610,6 +594,7 @@ class FormulaManipulator:
             print(f"无法解析公式: {user_formula}")
             return []
         
+        combined_operations = []
         current_expr = expr
         result = {
             "formula": {
@@ -618,88 +603,108 @@ class FormulaManipulator:
             },
             "tricks": [],
             "complexity": {
-                "edit_distance": None,
+                # "edit_distance": None,
                 "score": 0
             }
         }
         original_struct = self.record_structure(expr)
         # 执行变换操作
-        for _ in range(times):
+        # for _ in range(times):
+        for _ in range(1):
             # 第一阶段 - 操作4和8
             pre_transformed = current_expr
             first_phase_ops = [4, 8]
             for _ in range(5):
-                operation = random.choice(first_phase_ops)
-                
-                if operation == 4:
+                operationa = random.choice(first_phase_ops)
+              
+                if operationa == 4:
                     pre_transformed = self.multiply_with_num(pre_transformed)
                     score += 1
-                elif operation == 8:
-                    pre_transformed = self.add_elements(pre_transformed)
+                elif operationa == 8:
+                    pre_transformed = self.add_elements(pre_transformed) 
                     score += 1
-            
-            # 第二阶段 - 按顺序执行6和7
+                combined_operations.append((operationa,pre_transformed))
+            # 第二阶段 - 执行6 or 7
             post_transformed = pre_transformed
-            second_phase_ops = [6, 7]  # 固定顺序执行
-            
-            for op in second_phase_ops:  # 按顺序执行
-                if op == 6:
+            second_phase_ops = [6, 7]  
+            for _ in range(3):
+                operationb = random.choice(second_phase_ops)
+                combined_operations.append(operationb)
+                if operationb == 6:
                     new_expr = self.swap_mul_terms(post_transformed)
                     if new_expr != post_transformed:
                         post_transformed = new_expr
                         score += 1
-                elif op == 7:
+                elif operationb == 7:
                     new_expr, success = self.swap_terms(post_transformed, variables)
                     if success:
                         post_transformed = new_expr
                         score += 1
-            
-            # 第三阶段 - 条件判断
+                combined_operations.append((operationb,post_transformed))
+            # 第三阶段 
             final_transformed = post_transformed
-            # 检查变量数量
-            try:
-                current_vars = final_transformed.free_symbols
+            if '=' in final_transformed:
+                lhs, rhs = final_transformed.split('=')
+                lhs_expr = sp.sympify(lhs.strip(), locals=self.local_dict)
+                rhs_expr = sp.sympify(rhs.strip(), locals=self.local_dict)
+                current_vars = lhs_expr.free_symbols.union(rhs_expr.free_symbols)  # 合并左右变量
                 var_count = len(current_vars)
-            except AttributeError:
-                var_count = 0
-            
+                final_transformed = f"{sp.sstr(lhs_expr)} = {sp.sstr(rhs_expr)}"
+            else:
+                expr = sp.sympify(final_transformed.strip(), locals=self.local_dict)
+                current_vars = expr.free_symbols
+                var_count = len(current_vars)
+                final_transformed = sp.sstr(expr)
+
             third_phase_ops = [1, 2]
-            if var_count == 1:  # 只有一个变量时强制使用操作2
-                final_transformed = self.replace_with_variable(final_transformed, variables)
-                if final_transformed is not None:
-                    score += 1
-            else:  # 正常执行
-                for _ in range(1):
-                    operation = random.choice(third_phase_ops)
-                    if operation == 1:
-                        final_transformed = self.replace_with_number(final_transformed)
-                        if final_transformed is not None:
-                            score += 1
-                    elif operation == 2:
-                        final_transformed = self.replace_with_variable(final_transformed, variables)
-                        if final_transformed is not None:
-                            score += 1
-            
+            weights = [0.05, 0.95] if var_count > 1 else [0.0, 1.0]  # 简化判断
+
+            for _ in range(1):
+                operationc = random.choices(third_phase_ops, weights=weights, k=1)[0]
+                combined_operations.append(operationc)
+                if operationc == 1:
+                    final_transformed = self.replace_with_number(final_transformed)
+                elif operationc == 2:
+                    final_transformed = self.replace_with_variable(final_transformed)
+                combined_operations.append((operationc,final_transformed))
             if final_transformed is not None:
                 result['tricks'].append({
-                    "operation": "combined_operations",
+                    "operation": combined_operations,
                     "formula_after": str(final_transformed)
                 })
-                result['complexity']['score'] = score
+                # result['complexity']= score
                 current_expr = final_transformed
         
         modified_struct = self.record_structure(current_expr)
         edit_distance = self.compute_edit_distance(original_struct, modified_struct)
-        result['complexity']['edit_distance'] = edit_distance
-        
+        result['complexity'] = edit_distance + score
+
         results.append(result)
         return results
     
     
 
     def calculate_formula_replace_score(self, orig_formula, formula):
-        orig_vars = list(orig_formula.free_symbols)
-        formula_vars = list(formula.free_symbols)
+        # 解析 formula
+        if isinstance(formula, str) and '=' in formula:
+            formula_str = formula.split('=')[1].strip()
+        else:
+            formula_str = str(formula)
+        formula_expr = sp.sympify(formula_str, locals=self.local_dict, evaluate=False)
+        
+        # 解析 orig_formula
+        if isinstance(orig_formula, (list, tuple)):
+            orig_formula = orig_formula[0]
+        if isinstance(orig_formula, str) and '=' in orig_formula:
+            orig_str = orig_formula.split('=')[1].strip()
+        else:
+            orig_str = str(orig_formula)
+        orig_expr = sp.sympify(orig_str, locals=self.local_dict, evaluate=False)
+        
+        orig_vars = list(orig_expr.free_symbols)
+        formula_vars = list(formula_expr.free_symbols)
         overlap_vars = [var for var in orig_vars if var in formula_vars]
         new_vars = [var for var in formula_vars if var not in orig_vars]
-        return len(overlap_vars) - len(orig_vars) + len(new_vars)
+        
+        # 调整后的得分：重叠变量数 - 新增变量数
+        return len(overlap_vars) - len(new_vars)

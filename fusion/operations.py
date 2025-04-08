@@ -12,7 +12,48 @@ class Operations():
         self.reset_counters()
         self.operations_list = [1, 1, 2, 2,2,2, 3, 3, 4, 4,4,4, 4, 4]
         self.formula_manipulator = FormulaManipulator()
-        
+        self.local_dict = {
+            # 三角函数
+            'sin': sp.Function('sin'),
+            'cos': sp.Function('cos'),
+            'tan': sp.Function('tan'),
+            'cot': sp.Function('cot'),
+            
+            # 常用符号
+            'pi': sp.Symbol('pi'),
+            'alpha': sp.Symbol('alpha'),
+            'beta': sp.Symbol('beta'), 
+            'gamma': sp.Symbol('gamma'), 
+            'theta': sp.Symbol('theta'), 
+            
+            # 基础变量
+            'a': sp.Symbol('a'),
+            'b': sp.Symbol('b'),
+            'n': sp.Symbol('n'),
+            'k': sp.Symbol('k'),
+            
+            # 数列相关
+            'S_n': sp.Symbol('S_n'),
+            'a_1': sp.Symbol('a_1'),
+            'q': sp.Symbol('q'),
+            'd': sp.Symbol('d'),
+            'Q': sp.Symbol('Q'),
+            'W': sp.Symbol('W'),
+            'E': sp.Symbol('E'),
+            'R': sp.Symbol('R'),
+            'T': sp.Symbol('T'),
+            'Y': sp.Symbol('Y'),
+            'U': sp.Symbol('U'),
+            'I': sp.Symbol('I'),
+            'O': sp.Order, 
+            'P': sp.Symbol('P')
+        }
+        self.variable_library = [
+            self.local_dict[key] 
+            for key in self.local_dict 
+            if isinstance(self.local_dict[key], sp.Symbol)
+        ]
+
 
     def reset_counters(self):
         self.counters = {
@@ -30,24 +71,9 @@ class Operations():
             expr = expression[0]
         else:
             expr = expression
-
         if isinstance(expr, sp.Eq):
             expr = expr.rhs 
-        
         expr_str = str(expr)
-        local_dict = {
-            'sin': sp.sin,
-            'cos': sp.cos,
-            'tan': sp.Function('tan'),
-            'cot': sp.Function('cot'),
-            'pi': sp.Symbol('pi'),
-            'alpha': sp.Symbol('alpha'),
-            'beta': sp.Symbol('beta'),
-            'a': sp.Symbol('a'),
-            'b': sp.Symbol('b'),
-            'n': sp.Symbol('n'),
-            'k': sp.Symbol('k')
-        }
 
         # 移除表达式外层括号
         if expr_str.startswith('(') and expr_str.endswith(')'):
@@ -66,7 +92,7 @@ class Operations():
         
         try:
             # 尝试直接解析
-            sympy_expr = parse_expr(expr_str, local_dict=local_dict)
+            sympy_expr = parse_expr(expr_str, local_dict=self.local_dict)
             expanded = expand(sympy_expr)
             return str(expanded)
         except:
@@ -76,7 +102,7 @@ class Operations():
                 processed_parts = []
                 for part in parts:
                     part = part.strip()
-                    part_expr = parse_expr(part, local_dict=local_dict)
+                    part_expr = parse_expr(part, local_dict=self.local_dict)
                     processed_parts.append(part_expr)
                 
                 # 重新组合表达式
@@ -192,41 +218,38 @@ class Operations():
         
 
     def replace_with_formula(self, formula, all_tricks):
-        # 如果输入是列表或元组，获取第一个元素
-        if isinstance(formula, list):
-            formula = formula[0]
-        elif isinstance(formula, tuple):
-            formula = formula[0]
-        
-        # 获取原始等式的左右两边
-        if isinstance(formula, sp.Eq):
-            # 将 Eq 对象转换为字符串格式的等式
-            orig_left = str(formula.lhs)
-            orig_right = str(formula.rhs)
-            formula_str = f"{orig_left} = {orig_right}"
-        else:
-            formula_str = str(formula)
-            if '=' not in formula_str:
-                return formula_str
+        # 解析原始公式
+        formula_str = str(formula) if not isinstance(formula, str) else formula
+        if '=' in formula_str:
             orig_left, orig_right = formula_str.split('=', 1)
-            orig_left = orig_left.strip()
-            orig_right = orig_right.strip()
+            orig_left_expr = sp.sympify(orig_left.strip(), locals=self.local_dict)
+            orig_right_expr = sp.sympify(orig_right.strip(), locals=self.local_dict)
+        else:
+            orig_expr = sp.sympify(formula_str, locals=self.local_dict)
+            orig_left_expr = orig_expr
+            orig_right_expr = sp.Integer(0)
         
-        # 随机选择一个替换公式
-        if all_tricks:
-            replacement = random.choice(list(all_tricks.keys()))
-            if '=' in replacement:
-                repl_left, repl_right = replacement.split('=', 1)
-                repl_left = repl_left.strip()
-                repl_right = repl_right.strip()
-                
-                # 随机决定替换左边还是右边，并返回字符串格式
-                if random.choice([True, False]):
-                    return f"{repl_left} = {orig_right}"
-                else:
-                    return f"{orig_left} = {repl_right}"
+        valid_replacements = []
+        orig_right_vars = orig_right_expr.free_symbols
         
-        return formula_str
+        # 遍历所有技巧公式的右侧
+        for trick_formula in all_tricks:
+            if '=' in trick_formula:
+                _, trick_right = trick_formula.split('=', 1)
+                try:
+                    trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
+                except:
+                    continue
+            
+                for var in orig_right_vars:
+                    new_right = orig_right_expr.subs(var, trick_right_expr)
+                    new_formula = f"{sp.sstr(orig_left_expr)} = {sp.sstr(new_right)}"
+                    valid_replacements.append(new_formula)
+        
+        if valid_replacements:
+            return random.choice(valid_replacements)
+        else:
+            return formula_str
             
 
 
@@ -266,6 +289,7 @@ class Operations():
             
             # 解析公式
             formula = self.formula_manipulator.parse_user_formula(user_formula)
+            print(formula)
             if formula is None:
                 continue
             
@@ -289,7 +313,8 @@ class Operations():
                     operation_counters['generate_formulas'] += 1
             elif operation == 4:
                 operand_result = self.replace_with_formula(formula, all_tricks)
-                operation_counters['replace_formula'] = manipulator.calculate_formula_replace_score(formula, operand_result)
+                operation_counters['replace_formula'] += 1  # 只需增加计数
+            
             if operand_result is not None:
                 result['fusion_operands'].append({
                     "operation": operation,

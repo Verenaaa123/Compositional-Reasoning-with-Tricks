@@ -10,9 +10,9 @@ from fusion.operations import Operations
 
 alpha, beta = sympy.symbols('α β')
 a, b, n, pi, k = sympy.symbols('a b n pi k')
-S_n, a_1, q, d = sympy.symbols('S_n a_1 q d')
+q, d = sympy.symbols('q d')
 
-def tricks_fusion():
+def tricks_construction():
     print("开始执行 tricks_fusion...")
     formula_manipulator = FormulaManipulator()
     all_rules_results = {}
@@ -75,60 +75,123 @@ def tricks_fusion():
             "formulas": all_results
         }
         
-        print(f"完成 {rule_name} 的所有公式融合")
+        print(f"Finish all construct of {rule_name}")
     
-    filepath = '/Users/wyl/Desktop/pythonProject_3/data/tricks/fusion_results_all.json'
+    filepath = '/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(all_rules_results, f, ensure_ascii=False, indent=4)
-    print(f"所有规则的融合结果已保存到 {filepath}")
+    print(f"All constructed results saved in  {filepath}")
 
-
-def tricks_construction(trick_name=None):
+def tricks_fusion(trick_name=None):
     ops = Operations()
+    construction_file = '/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
     
-    fusion_file = f'/Users/wyl/Desktop/pythonProject_3/data/tricks/fusion_results_all.json'
-    with open(fusion_file, 'r', encoding='utf-8') as f:
-        fusion_results = json.load(f)
+    # 读取构造结果文件
+    with open(construction_file, 'r', encoding='utf-8') as f:
+        construction_results = json.load(f)
     
     all_formulas = {}
+    formula_complexity_pairs = []  # 存储 (formula_after, complexity) 元组
     
-    # 首先添加 all_tricks 中的公式
-    for formula, rule in all_tricks.items():
-        all_formulas[formula] = rule
-    
-    # 从 fusion_results 中提取 formula_after
-    for rule_name, rule_data in fusion_results.items():
+    # 第一步：从 construct_result_all.json 提取公式和复杂度
+    for rule_name, rule_data in construction_results.items():
         if trick_name and rule_name != trick_name:
-            continue
-            
+            continue  # 过滤指定规则
+        
+        # 遍历嵌套结构
         for formula_info in rule_data.get('formulas', []):
             for execution in formula_info.get('executions', []):
                 for result in execution.get('results', []):
+                    complexity = result.get('complexity')
+                    if complexity is None:
+                        continue  # 跳过无复杂度记录
+                        
+                    # 提取所有 tricks 中的 formula_after
                     for trick in result.get('tricks', []):
-                        if 'formula_after' in trick:
-                            all_formulas[trick['formula_after']] = rule_name
+                        formula_after = trick.get('formula_after')
+                        if formula_after:
+                            formula_complexity_pairs.append((formula_after, complexity))
+                            all_formulas[formula_after] = rule_name 
     
-    # 使用收集到的所有公式执行操作
+    # 第二步：合并 all_tricks 的公式
+    for formula, rule in all_tricks.items():
+        all_formulas[formula] = rule
+    
+    # 第三步：执行操作并传递复杂度
     results = {}
     for formula, rule in all_formulas.items():
-        operation_results = ops.execute_operations(formula, all_formulas)
-        if formula not in results:
-            results[formula] = {
-                "rule": rule,
-                "operations": operation_results
-            }
+        # 查找对应的复杂度（优先使用 construct 结果中的值）
+        complexity = next(
+            (c for f, c in formula_complexity_pairs if f == formula),
+            None  # all_tricks 公式默认无复杂度
+        )
+        
+        # 调用执行函数并传入三元组
+        operation_results = ops.execute_operations(
+            formula=formula,
+            all_formulas=all_formulas,
+            complexity=complexity
+        )
+        
+        results[formula] = {
+            "rule": rule,
+            "operations": operation_results
+        }
     
-    file_dir = '/Users/wyl/Desktop/pythonProject_3/data/composition'
-    filename = 'construct_result_all.json' 
+    # 保存结果文件
+    file_dir = '/Users/wyl/Desktop/pythonProject_3/data/tricks'
+    filename = 'fusion_results_all.json' 
     filepath = f'{file_dir}/{filename}'
 
     with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump({
-            "results": results
-        }, f, ensure_ascii=False, indent=4)
-    print(f"Construction results saved in {filepath}")
+        json.dump({"results": results}, f, ensure_ascii=False, indent=4)
+    
+    print(f"Fusion results saved in {filepath}")
+    
+# def tricks_fusion(trick_name=None):
+#     ops = Operations()
+#     construction_file = f'/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
+#     with open(construction_file, 'r', encoding='utf-8') as f:
+#         construction_results = json.load(f)
+    
+#     all_formulas = {}
+    
+#     # 首先添加 all_tricks 中的公式
+#     for formula, rule in all_tricks.items():
+#         all_formulas[formula] = rule
+    
+#     # 从 construction_results 中提取 formula_after
+#     for rule_name, rule_data in construction_results.items():
+#         if trick_name and rule_name != trick_name:
+#             continue
+            
+#         for formula_info in rule_data.get('formulas', []):
+#             for execution in formula_info.get('executions', []):
+#                 for result in execution.get('results', []):
+#                     for trick in result.get('tricks', []):
+#                         if 'formula_after' in trick:
+#                             all_formulas[trick['formula_after']] = rule_name
+    
+#     results = {}
+#     for formula, rule in all_formulas.items():
+#         operation_results = ops.execute_operations(formula, all_formulas)
+#         if formula not in results:
+#             results[formula] = {
+#                 "rule": rule,
+#                 "operations": operation_results
+#             }
+    
+#     file_dir = '/Users/wyl/Desktop/pythonProject_3/data/tricks'
+#     filename = 'fusion_results_all.json' 
+#     filepath = f'{file_dir}/{filename}'
 
-# 命令行参数解析
+#     with open(filepath, 'w', encoding='utf-8') as f:
+#         json.dump({
+#             "results": results
+#         }, f, ensure_ascii=False, indent=4)
+#     print(f"Fusion results saved in {filepath}")
+
+
 parser = argparse.ArgumentParser(description='Template scripts. function 1: Hello World')
 parser.add_argument('--function', type=str, default=0, help='use this to specify function!')
 parser.add_argument('--v1', type=int, default=0, help='int value')

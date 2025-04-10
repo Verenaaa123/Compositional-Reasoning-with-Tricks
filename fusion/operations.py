@@ -58,9 +58,19 @@ class Operations():
     def get_right_str(self, expr) -> str:
         if isinstance(expr, (list,tuple)):
             expr = expr[0].split('=')[1] if '=' in expr[0] else expr
-        elif isinstance(expr, sp.Eq):
+        elif isinstance(expr, sp.Eq): 
             expr = expr.rhs
         expr_str = str(expr)  
+        return expr_str
+    
+    def get_str_expr(self, expr) -> str:
+        if isinstance(expr, (list,tuple)):
+            expr = expr[0]
+            if isinstance(expr, sp.Eq):
+                expr_str = f"{sp.sstr(expr.lhs)} = {sp.sstr(expr.rhs)}"
+        elif isinstance(expr, sp.Eq):
+            expr_str = f"{sp.sstr(expr.lhs)} = {sp.sstr(expr.rhs)}"
+        # expr_str = str(expr)  
         return expr_str
 
 
@@ -79,6 +89,8 @@ class Operations():
             'find_right_operand': 0,
             'concatenate_formulas': 0,
             'generate_formulas': 0,
+            'replace_with_formula':0,
+            'combining_similar_terms':0
         }
 
 
@@ -232,12 +244,10 @@ class Operations():
         
 
     def replace_with_formula(self, formula, all_tricks):
-        # 解析原始公式
-        formula_str = str(formula) if not isinstance(formula, str) else formula
+        formula_str = self.get_str_expr(formula)
         if '=' in formula_str:
-            orig_left, orig_right = formula_str.split('=', 1)
-            orig_left_expr = sp.sympify(orig_left.strip(), locals=self.local_dict)
-            orig_right_expr = sp.sympify(orig_right.strip(), locals=self.local_dict)
+            orig_left_expr = self.get_sp_expr(formula_str).lhs
+            orig_right_expr = self.get_sp_expr(formula_str).rhs
         else:
             orig_expr = sp.sympify(formula_str, locals=self.local_dict)
             orig_left_expr = orig_expr
@@ -250,16 +260,15 @@ class Operations():
         for trick_formula in all_tricks:
             if '=' in trick_formula:
                 _, trick_right = trick_formula.split('=', 1)
-                try:
-                    trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
-                except:
-                    continue
+                trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
+                # 将替换的表达式用括号包裹
+                trick_right_paren = sp.Paren(trick_right_expr, evaluate=False)
             
                 for var in orig_right_vars:
-                    new_right = orig_right_expr.subs(var, trick_right_expr)
+                    # 替换变量为带括号的表达式
+                    new_right = orig_right_expr.subs(var, trick_right_paren)
                     new_formula = f"{sp.sstr(orig_left_expr)} = {sp.sstr(new_right)}"
                     valid_replacements.append(new_formula)
-        
         if valid_replacements:
             return random.choice(valid_replacements)
         else:
@@ -271,17 +280,17 @@ class Operations():
         results = {}
         times = random.randint(1, 10)
         
-        # 为每个公式重置计数器
         operation_counters = {
             'find_right_operand': 0,
             'concatenate_formulas': 0,
             'generate_formulas': 0,
-            'replace_formula': 0
+            'replace_formula': 0,
+            'combining_similar_terms':0
         }
         
         # 检查是否为纯数字表达式
         def is_numeric(expr_str):
-            cleaned = expr_str.replace(' ', '').replace('+', '').replace('-', '').replace('*', '').replace('/', '').replace('=', '')
+            cleaned = expr_str.replace(' ', '').replace('+', '').replace('-', '').replace('*', '').replace('/', '').replace('=', '').replace('**', '').replace('*', '').replace('(', '').replace(')', '')
             try:
                 float(cleaned)
                 return True
@@ -298,7 +307,8 @@ class Operations():
                     "right": None,
                 },
                 'fusion_operands': [],
-                'complexity': None,
+                'composition_complexity':None,
+                'fusion_complexity': None,
             }
             
             # 解析公式
@@ -330,7 +340,7 @@ class Operations():
                 operation_counters['replace_formula'] += 1  # 只需增加计数
             elif operation == 5:
                 operand_result = self.combining_similar_terms(formula)
-                operation_counters['replace_formula'] += 1
+                operation_counters['combining_similar_terms'] += 1
             
             if operand_result is not None:
                 result['fusion_operands'].append({
@@ -338,24 +348,25 @@ class Operations():
                     "result": str(operand_result)
                 })
 
-            result['complexity'] = operation_counters.copy()
+            result['fusion_complexity'] = operation_counters.copy()
             results[str(i)] = result
         
         return results
 
 
-    def get_counters(self):
-            return self.counters
+    # def get_counters(self):
+    #         return self.counters
 
 
-    def get_operation_name(self, operation):
-        operations = {
-            1: 'find_right_operand',
-            2: 'concatenate_formulas',
-            3: 'generate_formulas',
-            4: 'replace_formula'  # 添加新操作名称
-        }
-        return operations.get(operation, 'unknown')
+    # def get_operation_name(self, operation):
+    #     operations = {
+    #         1: 'find_right_operand',
+    #         2: 'concatenate_formulas',
+    #         3: 'generate_formulas',
+    #         4: 'replace_formula',
+    #         5: 'combining_similar_terms'
+    #     }
+    #     return operations.get(operation, 'unknown')
 
 
 manipulator = FormulaManipulator()

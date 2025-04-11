@@ -6,7 +6,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "args": ["--function", "1"],  // 添加此行传递参数
+            "args": ["--function", "2"],  // 添加此行传递参数
             "console": "integratedTerminal"
         }
     ]

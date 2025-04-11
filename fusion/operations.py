@@ -1,7 +1,8 @@
 import sympy as sp
-from sympy import expand, parse_expr
+from sympy import expand, Eq
 import random
 import re
+from sympy import UnevaluatedExpr
 from trick_rules.rule_module import FormulaManipulator
 
 
@@ -12,42 +13,9 @@ class Operations():
         self.reset_counters()
         self.operations_list = [1,2,3,4,5]
         self.formula_manipulator = FormulaManipulator()
-        self.local_dict = {
-            # 三角函数
-            'sin': sp.Function('sin'),
-            'cos': sp.Function('cos'),
-            'tan': sp.Function('tan'),
-            'cot': sp.Function('cot'),
-            
-            # 常用符号
-            'pi': sp.Symbol('pi'),
-            'alpha': sp.Symbol('alpha'),
-            'beta': sp.Symbol('beta'), 
-            'gamma': sp.Symbol('gamma'), 
-            'theta': sp.Symbol('theta'), 
-            
-            # 基础变量
-            'a': sp.Symbol('a'),
-            'b': sp.Symbol('b'),
-            'n': sp.Symbol('n'),
-            'k': sp.Symbol('k'),
-            
-            # 数列相关
-            # 'S_n': sp.Symbol('S_n'),
-            # 'a_1': sp.Symbol('a_1'),
-            'q': sp.Symbol('q'),
-            'd': sp.Symbol('d'),
-            'Q': sp.Symbol('Q'),
-            'W': sp.Symbol('W'),
-            'E': sp.Symbol('E'),
-            'R': sp.Symbol('R'),
-            'T': sp.Symbol('T'),
-            'Y': sp.Symbol('Y'),
-            'U': sp.Symbol('U'),
-            'I': sp.Symbol('I'),
-            'O': sp.Symbol('O'), 
-            'P': sp.Symbol('P')
-        }
+        self.local_dict = self.formula_manipulator.local_dict
+        self.variable_library = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz') + \
+                               [chr(i) for i in range(0x03B1, 0x03C9 + 1)]
         self.variable_library = [
             self.local_dict[key] 
             for key in self.local_dict 
@@ -56,12 +24,20 @@ class Operations():
 
 
     def get_right_str(self, expr) -> str:
-        if isinstance(expr, (list,tuple)):
-            expr = expr[0].split('=')[1] if '=' in expr[0] else expr
-        elif isinstance(expr, sp.Eq): 
-            expr = expr.rhs
-        expr_str = str(expr)  
-        return expr_str
+        # 处理 SymPy 等式对象
+        if isinstance(expr, sp.Eq):
+            return str(expr.rhs)
+        
+        # 处理旧逻辑（字符串/列表/元组）
+        if isinstance(expr, (list, tuple)):
+            expr_ = expr[0]  # 提取第一个元素
+            return str(expr_)
+        if isinstance(expr, str) and '=' in expr:
+            return expr.split('=', 1)[1].strip()  # 分割右侧表达式
+        
+        # 其他类型抛出明确错误
+        raise TypeError(f"不支持的表达式类型: {type(expr)}")
+    
     
     def get_str_expr(self, expr) -> str:
         if isinstance(expr, (list,tuple)):
@@ -74,13 +50,37 @@ class Operations():
         return expr_str
 
 
+    # def get_sp_expr(self, expr_str) -> sp.Eq:
+    #     if isinstance(expr_str, (list,tuple)):
+    #         expr = expr[0].split('=')[1] if '=' in expr[0] else expr
+    #     elif isinstance(expr_str, str):
+    #         expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)
+    #     expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)  
+    #     return expr
+
+
     def get_sp_expr(self, expr_str) -> sp.Eq:
-        if isinstance(expr_str, (list,tuple)):
-            expr = expr[0].split('=')[1] if '=' in expr[0] else expr
-        elif isinstance(expr_str, str):
-            expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)
-        expr = sp.sympify(expr_str.replace("=", "=="),locals=self.local_dict)  
-        return expr
+        # 统一处理输入类型（支持字符串/列表/元组）
+        if isinstance(expr_str, (list, tuple)):
+            # 提取第一个元素作为待解析的字符串
+            expr_str = expr_str[0]
+        if isinstance(expr_str, sp.Eq):
+            return expr_str
+        # 确保输入是字符串类型
+        if not isinstance(expr_str, str):
+            raise TypeError(f"输入类型必须为 str/list/tuple，实际类型: {type(expr_str)}")
+
+        # 检查等号是否存在
+        if '=' not in expr_str:
+            raise ValueError(f"输入字符串必须包含等号: {expr_str}")
+
+        # 分割左右表达式
+        left_str, right_str = expr_str.split('=', 1) 
+        
+        lhs = sp.sympify(left_str.strip(), locals=self.local_dict)
+        rhs = sp.sympify(right_str.strip(), locals=self.local_dict)
+        return sp.Eq(lhs, rhs)  # 显式构造等式对象
+        
 
 
 
@@ -96,8 +96,12 @@ class Operations():
 
     #表达式展开
     def find_right_operand(self, expr):
+        if isinstance(expr, tuple):
+            expr = expr[0]
+        if not isinstance(expr, sp.Eq):
+            expr = self.get_sp_expr(expr)
         expr_str = self.get_right_str(expr)
-        expr_lhs = expr.split('=')[0]
+        expr_lhs = expr_str.split('=')[0]
         # 移除表达式外层括号
         if expr_str.startswith('(') and expr_str.endswith(')'):
             expr_str = expr_str[1:-1]
@@ -134,13 +138,13 @@ class Operations():
                 
             expanded = expand(result)
             
-            return f"{expr_lhs} = {sp.sstr(expanded)}"
+            return f"{str(expr_lhs)} = {sp.sstr(expanded)}"
           
 
     # 合并同类项
     def combining_similar_terms(self, expr):
         expr_sp = self.get_sp_expr(expr)
-        combined = sp.collect(expr_sp.rhs)
+        combined = sp.collect(expr_sp.rhs, self.variable_library)
         return combined
 
 
@@ -246,37 +250,37 @@ class Operations():
     def replace_with_formula(self, formula, all_tricks):
         formula_str = self.get_str_expr(formula)
         if '=' in formula_str:
-            orig_left_expr = self.get_sp_expr(formula_str).lhs
-            orig_right_expr = self.get_sp_expr(formula_str).rhs
+            sp_expr = self.get_sp_expr(formula_str)
+            orig_left_expr = sp_expr.lhs
+            orig_right_expr = sp_expr.rhs
         else:
             orig_expr = sp.sympify(formula_str, locals=self.local_dict)
             orig_left_expr = orig_expr
             orig_right_expr = sp.Integer(0)
-        
+
         valid_replacements = []
         orig_right_vars = orig_right_expr.free_symbols
-        
+
         # 遍历所有技巧公式的右侧
         for trick_formula in all_tricks:
             if '=' in trick_formula:
                 _, trick_right = trick_formula.split('=', 1)
                 trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
-                # 将替换的表达式用括号包裹
-                trick_right_paren = sp.Paren(trick_right_expr, evaluate=False)
-            
+                # 使用 UnevaluatedExpr 包裹表达式以保留括号
+                trick_right_paren = UnevaluatedExpr(trick_right_expr)
+
                 for var in orig_right_vars:
                     # 替换变量为带括号的表达式
                     new_right = orig_right_expr.subs(var, trick_right_paren)
+                    # 转换为字符串时自动添加括号
                     new_formula = f"{sp.sstr(orig_left_expr)} = {sp.sstr(new_right)}"
                     valid_replacements.append(new_formula)
-        if valid_replacements:
-            return random.choice(valid_replacements)
-        else:
-            return formula_str
+        
+        return random.choice(valid_replacements) if valid_replacements else formula_str
             
 
 
-    def execute_operations(self, user_formula, all_tricks):
+    def execute_operations(self, user_formula, all_tricks, complexity):
         results = {}
         times = random.randint(1, 10)
         
@@ -307,8 +311,8 @@ class Operations():
                     "right": None,
                 },
                 'fusion_operands': [],
-                'composition_complexity':None,
-                'fusion_complexity': None,
+                'composition_complexity': 0,
+                'fusion_complexity': 0,
             }
             
             # 解析公式
@@ -350,7 +354,7 @@ class Operations():
 
             result['fusion_complexity'] = operation_counters.copy()
             results[str(i)] = result
-        
+            result['composition_complexity'] = complexity
         return results
 
 

@@ -82,6 +82,7 @@ def tricks_construction():
         json.dump(all_rules_results, f, ensure_ascii=False, indent=4)
     print(f"All constructed results saved in  {filepath}")
 
+
 def tricks_fusion(trick_name=None):
     ops = Operations()
     construction_file = '/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
@@ -125,11 +126,11 @@ def tricks_fusion(trick_name=None):
             (c for f, c in formula_complexity_pairs if f == formula),
             None  # all_tricks 公式默认无复杂度
         )
-        
+        # user_formula, all_tricks, complexity
         # 调用执行函数并传入三元组
         operation_results = ops.execute_operations(
-            formula=formula,
-            all_formulas=all_formulas,
+            user_formula=formula,
+            all_tricks=all_formulas,
             complexity=complexity
         )
         
@@ -203,7 +204,7 @@ if __name__ == "__main__":
     if args.function == '0':
         print("no function indicate")
     elif args.function == '1':
-        rule_name = args.s1 if args.s1 != 'none' else None
-        tricks_construction(rule_name)
+        tricks_construction()
     elif args.function == '2':
-        tricks_fusion() 
+        rule_name = args.s1 if args.s1 != 'none' else None
+        tricks_fusion(rule_name)

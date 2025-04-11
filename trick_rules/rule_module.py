@@ -23,43 +23,42 @@ class FormulaManipulator:
             'cos': sp.Function('cos'),
             'tan': sp.Function('tan'),
             'cot': sp.Function('cot'),
-            
-            # 常用符号
-            'pi': sp.Symbol('pi'),
-            'alpha': sp.Symbol('alpha'),
-            'beta': sp.Symbol('beta'),
-            'gamma': sp.Symbol('gamma'),
-            'delta': sp.Symbol('delta'),
-            'epsilon': sp.Symbol('epsilon'),
-            'zeta': sp.Symbol('zeta'),
-            'eta': sp.Symbol('eta'),
-            'theta': sp.Symbol('theta'),
-            'iota': sp.Symbol('iota'),
-            'kappa': sp.Symbol('kappa'),
-            'lambda': sp.Symbol('lambda'),
-            'mu': sp.Symbol('mu'),
-            'nu': sp.Symbol('nu'),
-            'xi': sp.Symbol('xi'),
-            'omicron': sp.Symbol('omicron'),
-            'pi': sp.Symbol('pi'),
-            'rho': sp.Symbol('rho'),
-            'sigma': sp.Symbol('sigma'),
-            'tau': sp.Symbol('tau'),
-            'upsilon': sp.Symbol('upsilon'),
-            'phi': sp.Symbol('phi'),
-            'chi': sp.Symbol('chi'),
-            'psi': sp.Symbol('psi'),
-            'omega': sp.Symbol('omega'),
 
-            # 大写希腊字母（名称首字母大写）
-            'Alpha': sp.Symbol('Alpha'),
-            'Beta': sp.Symbol('Beta'),
-            'Gamma': sp.Symbol('Gamma'),
-            'Delta': sp.Symbol('Delta'),
-            'Theta': sp.Symbol('Theta'),
-            'Lambda': sp.Symbol('Lambda'),
-            'Sigma': sp.Symbol('Sigma'),
-            'Omega': sp.Symbol('Omega'),
+            # 小写希腊字母
+            'π': sp.Symbol('π'),          # \u03C0
+            'α': sp.Symbol('α'),          # \u03B1
+            'β': sp.Symbol('β'),          # \u03B2
+            'γ': sp.Symbol('γ'),          # \u03B3
+            'δ': sp.Symbol('δ'),          # \u03B4
+            'ε': sp.Symbol('ε'),          # \u03B5
+            'ζ': sp.Symbol('ζ'),          # \u03B6
+            'η': sp.Symbol('η'),          # \u03B7
+            'θ': sp.Symbol('θ'),          # \u03B8
+            'ι': sp.Symbol('ι'),          # \u03B9
+            'κ': sp.Symbol('κ'),          # \u03BA
+            'λ': sp.Symbol('λ'),          # \u03BB
+            'μ': sp.Symbol('μ'),          # \u03BC
+            'ν': sp.Symbol('ν'),          # \u03BD
+            'ξ': sp.Symbol('ξ'),          # \u03BE
+            'ο': sp.Symbol('ο'),          # \u03BF
+            'ρ': sp.Symbol('ρ'),          # \u03C1
+            'σ': sp.Symbol('σ'),          # \u03C3
+            'τ': sp.Symbol('τ'),          # \u03C4
+            'υ': sp.Symbol('υ'),          # \u03C5
+            'φ': sp.Symbol('φ'),          # \u03C6
+            'χ': sp.Symbol('χ'),          # \u03C7
+            'ψ': sp.Symbol('ψ'),          # \u03C8
+            'ω': sp.Symbol('ω'),          # \u03C9
+
+            # 大写希腊字母
+            'Α': sp.Symbol('Α'),          # \u0391
+            'Β': sp.Symbol('Β'),          # \u0392
+            'Γ': sp.Symbol('Γ'),          # \u0393
+            'Δ': sp.Symbol('Δ'),          # \u0394
+            'Θ': sp.Symbol('Θ'),          # \u0398
+            'Λ': sp.Symbol('Λ'),          # \u039B
+            'Σ': sp.Symbol('Σ'),          # \u03A3
+            'Ω': sp.Symbol('Ω'),          # \u03A9
             
             # 基础变量
             'a': sp.Symbol('a'),
@@ -156,7 +155,7 @@ class FormulaManipulator:
     'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega'
 ]
         upper_greek = [name.capitalize() for name in lower_greek]
-        greek_letters = [lower_greek+upper_greek]
+        greek_letters = lower_greek+upper_greek
         for letter in greek_letters:
             self.local_dict[letter] = sp.Symbol(letter)
         
@@ -176,12 +175,16 @@ class FormulaManipulator:
                 self.local_dict[c] = sp.Symbol(c)
         
         lower_greek = [
-    'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta',
-    'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho',
-    'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega'
+    'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ',
+    'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ',
+    'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω'
 ]
-        upper_greek = [name.capitalize() for name in lower_greek]
-        greek_letters = [lower_greek+upper_greek]
+        upper_greek = [
+    'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ',
+    'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π', 'Ρ',
+    'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω'
+]
+        greek_letters = lower_greek+upper_greek
         for letter in greek_letters:
             self.local_dict[letter] = sp.Symbol(letter)
         

@@ -1,0 +1,5 @@
+selenium==4.18.1
+webdriver-manager==4.0.1
+requests>=2.31.0
+jupyterlab-server>=2.27.3
+streamlit>=1.32.0 

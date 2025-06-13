@@ -16,7 +16,7 @@ class FormulaManipulator:
     def __init__(self):
         self.variable_library = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz') + \
                                [chr(i) for i in range(0x03B1, 0x03C9 + 1)]
-        self.operations_list = [1, 2, 3, 4, 5, 6, 7, 8]
+        self.operations_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         self.local_dict = {
             # 三角函数
             'sin': sp.Function('sin'),
@@ -401,8 +401,9 @@ class FormulaManipulator:
                 trick_left_expr = sp.sympify(trick_left.strip(), locals=self.local_dict)
             
                 for var in orig_right_vars:
-                    new_right = orig_right_expr.subs(var, trick_right_expr)
-                    new_left = orig_left_expr.subs(var, trick_left_expr)
+                    # 在替换的式子外添加括号
+                    new_right = orig_right_expr.subs(var, f"({trick_right_expr})")
+                    new_left = orig_left_expr.subs(var, f"({trick_left_expr})")
                     new_formula = f"{sp.sstr(new_left)} = {sp.sstr(new_right)}"
                     valid_replacements.append(new_formula)
         
@@ -642,12 +643,51 @@ class FormulaManipulator:
 
 
 
+    def power_transform(self, formula):
+        """
+        将输入等式转换为幂次项形式
+        输出两种形式：
+        1. 数字为底，对等式左右两侧分别进行幂次处理
+        2. 从all_tricks中随机选择一个等式为底，对等式左右两侧分别进行幂次处理
+        """
+        if isinstance(formula, sp.Eq):
+            lhs_str = str(formula.lhs)
+            rhs_str = str(formula.rhs)
+        else:
+            formula_str = str(formula)
+            if '=' in formula_str:
+                lhs_str, rhs_str = formula_str.split('=', 1)
+                lhs_str = lhs_str.strip()
+                rhs_str = rhs_str.strip()
+            else:
+                return formula_str
+
+        # 随机选择转换方式
+        transform_type = random.choice(['number', 'trick'])
+        
+        if transform_type == 'number':
+            # 随机选择一个2到10之间的数字作为底数
+            base = random.randint(2, 10)
+            # 构造新的等式，左右两侧分别进行幂次处理
+            new_formula = f"{base}**({lhs_str}) = {base}**({rhs_str})"
+        else:
+            # 从all_tricks中随机选择一个等式作为底数
+            trick = random.choice(list(all_tricks.keys()))
+            if '=' in trick:
+                # 如果trick是等式，取等号左边作为底数
+                base = trick.split('=')[0].strip()
+            else:
+                base = trick.strip()
+            # 构造新的等式，左右两侧分别进行幂次处理
+            new_formula = f"({base})**({lhs_str}) = ({base})**({rhs_str})"
+        
+        return new_formula
+
+
+
     def execute_functions(self, user_formula, times=None):
         print(f"\n=== 开始执行变换 ===")
         print(f"输入公式: {user_formula}")
-        
-        # if times is None:
-        #     times = random.randint(1, 3)
         
         results = []
         score = 0
@@ -666,17 +706,16 @@ class FormulaManipulator:
             },
             "tricks": [],
             "complexity": {
-                # "edit_distance": None,
                 "score": 0
             }
         }
         original_struct = self.record_structure(expr)
+        
         # 执行变换操作
-        # for _ in range(times):
         for _ in range(1):
-            # 第一阶段 - 操作4和8
+            # 第一阶段 - 操作4、8和9
             pre_transformed = current_expr
-            first_phase_ops = [4, 8]
+            first_phase_ops = [4, 8, 9]  # 添加新的操作类型9
             for _ in range(5):
                 operationa = random.choice(first_phase_ops)
               
@@ -685,6 +724,9 @@ class FormulaManipulator:
                     score += 1
                 elif operationa == 8:
                     pre_transformed = self.add_elements(pre_transformed) 
+                    score += 1
+                elif operationa == 9:
+                    pre_transformed = self.power_transform(pre_transformed)
                     score += 1
                 combined_operations.append((operationa,pre_transformed))
             # 第二阶段 - 执行6 or 7
@@ -735,7 +777,6 @@ class FormulaManipulator:
                     "operation": combined_operations,
                     "formula_after": str(final_transformed)
                 })
-                # result['complexity']= score
                 current_expr = final_transformed
         
         modified_struct = self.record_structure(current_expr)

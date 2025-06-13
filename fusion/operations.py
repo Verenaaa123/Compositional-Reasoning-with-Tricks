@@ -11,7 +11,7 @@ class Operations():
     #import pdb;
     def __init__(self):
         self.reset_counters()
-        self.operations_list = [1,2,3,4,5]
+        self.operations_list = [1,2,3,4,5,6]
         self.formula_manipulator = FormulaManipulator()
         self.local_dict = self.formula_manipulator.local_dict
         self.variable_library = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz') + \
@@ -42,11 +42,23 @@ class Operations():
     def get_str_expr(self, expr) -> str:
         if isinstance(expr, (list,tuple)):
             expr = expr[0]
-            if isinstance(expr, sp.Eq):
-                expr_str = f"{sp.sstr(expr.lhs)} = {sp.sstr(expr.rhs)}"
-        elif isinstance(expr, sp.Eq):
-            expr_str = f"{sp.sstr(expr.lhs)} = {sp.sstr(expr.rhs)}"
-        # expr_str = str(expr)  
+        
+        if isinstance(expr, sp.Eq):
+            # 检查是否意外得到了布尔值结果
+            if isinstance(expr.rhs, (sp.logic.boolalg.BooleanTrue, sp.logic.boolalg.BooleanFalse)):
+                print(f"警告：检测到布尔值结果 {expr.rhs}，这可能表示前面的操作有问题")
+                # 返回原始等式而不是布尔值
+                return f"{str(expr.lhs)} = {str(expr.rhs)}"
+            expr_str = f"{str(expr.lhs)} = {str(expr.rhs)}"
+        elif isinstance(expr, str):
+            expr_str = expr
+        else:
+            expr_str = str(expr)
+        
+        # 确保输出是标准等式格式
+        if '==' in expr_str:
+            expr_str = expr_str.replace('==', '=')
+        
         return expr_str
 
 
@@ -79,7 +91,7 @@ class Operations():
         
         lhs = sp.sympify(left_str.strip(), locals=self.local_dict)
         rhs = sp.sympify(right_str.strip(), locals=self.local_dict)
-        return sp.Eq(lhs, rhs)  # 显式构造等式对象
+        return sp.Eq(lhs, rhs, evaluate=False)  # 添加 evaluate=False 防止自动求值
         
 
 
@@ -90,7 +102,8 @@ class Operations():
             'concatenate_formulas': 0,
             'generate_formulas': 0,
             'replace_with_formula':0,
-            'combining_similar_terms':0
+            'combining_similar_terms':0,
+            'power_transform': 0
         }
 
 
@@ -100,52 +113,23 @@ class Operations():
             expr = expr[0]
         if not isinstance(expr, sp.Eq):
             expr = self.get_sp_expr(expr)
-        expr_str = self.get_right_str(expr)
-        expr_lhs = expr_str.split('=')[0]
-        # 移除表达式外层括号
-        if expr_str.startswith('(') and expr_str.endswith(')'):
-            expr_str = expr_str[1:-1]
-        
-        # 处理乘法表达式
-        if '*' in expr_str:
-            parts = expr_str.split('*')
-            processed_parts = []
-            for part in parts:
-                part = part.strip()
-                if part.startswith('(') and part.endswith(')'):
-                    part = part[1:-1]
-                processed_parts.append(part)
-            expr_str = '*'.join(processed_parts)
         
         try:
-            # 尝试直接解析
-            expr_sp = self.get_sp_expr(expr)
-            expanded = sp.expand(expr_sp,locals=self.local_dict)
-            return f"{expr_lhs} = {sp.sstr(expanded)}"
+            # 只对右侧表达式进行展开，而不是整个等式
+            expanded_rhs = sp.expand(expr.rhs, locals=self.local_dict)
+            # 构造新的等式
+            return f"{str(expr.lhs)} = {str(expanded_rhs)}"
         except:
-            # 如果直接解析失败，尝试分段处理
-            parts = expr_str.split('*')
-            processed_parts = []
-            for part in parts:
-                part = part.strip()
-                part_expr = self.get_sp_expr(expr, local_dict=self.local_dict)
-                processed_parts.append(part_expr)
-            
-            # 重新组合表达式
-            result = processed_parts[0]
-            for part in processed_parts[1:]:
-                result = result * part
-                
-            expanded = expand(result)
-            
-            return f"{str(expr_lhs)} = {sp.sstr(expanded)}"
-          
+            # 如果直接展开失败，返回原始等式
+            return f"{str(expr.lhs)} = {str(expr.rhs)}"
+
 
     # 合并同类项
     def combining_similar_terms(self, expr):
         expr_sp = self.get_sp_expr(expr)
         combined = sp.collect(expr_sp.rhs, self.variable_library)
-        return combined
+        # 确保返回标准等式格式
+        return f"{str(expr_sp.lhs)} = {str(combined)}"
 
 
     #拼接
@@ -279,6 +263,35 @@ class Operations():
         return random.choice(valid_replacements) if valid_replacements else formula_str
             
 
+    def power_transform(self, formula, all_tricks):
+        
+        if isinstance(formula, (list, tuple)):
+            formula = formula[0]
+        
+        # 获取输入等式的字符串表示
+        formula_str = self.get_str_expr(formula)
+        
+        # 随机选择转换方式
+        transform_type = random.choice(['number', 'trick'])
+        
+        if transform_type == 'number':
+            # 随机选择一个2到10之间的数字作为底数
+            base = random.randint(2, 10)
+            # 构造新的等式
+            new_formula = f"{base}^{formula_str}"
+        else:
+            # 从all_tricks中随机选择一个等式
+            valid_tricks = [trick for trick in all_tricks.keys() if '=' in trick]
+            if not valid_tricks:
+                return formula_str
+            
+            selected_trick = random.choice(valid_tricks)
+            # 只使用等式的右侧作为底数
+            base = selected_trick.split('=', 1)[1].strip()
+            # 构造新的等式
+            new_formula = f"({base})^{formula_str}"
+        
+        return new_formula
 
     def execute_operations(self, user_formula, all_tricks, complexity):
         results = {}
@@ -289,7 +302,8 @@ class Operations():
             'concatenate_formulas': 0,
             'generate_formulas': 0,
             'replace_formula': 0,
-            'combining_similar_terms':0
+            'combining_similar_terms': 0,
+            'power_transform': 0
         }
         
         # 检查是否为纯数字表达式
@@ -317,7 +331,6 @@ class Operations():
             
             # 解析公式
             formula = self.formula_manipulator.parse_user_formula(user_formula)
-            print(formula)
             if formula is None:
                 continue
             
@@ -341,21 +354,32 @@ class Operations():
                     operation_counters['generate_formulas'] += 1
             elif operation == 4:
                 operand_result = self.replace_with_formula(formula, all_tricks)
-                operation_counters['replace_formula'] += 1  # 只需增加计数
+                operation_counters['replace_formula'] += 1
             elif operation == 5:
                 operand_result = self.combining_similar_terms(formula)
                 operation_counters['combining_similar_terms'] += 1
+            elif operation == 6:
+                operand_result = self.power_transform(formula, all_tricks)
+                operation_counters['power_transform'] += 1
             
             if operand_result is not None:
+                # 确保结果经过 get_str_expr 处理
+                formatted_result = self.get_str_expr(operand_result)
                 result['fusion_operands'].append({
                     "operation": operation,
-                    "result": str(operand_result)
+                    "result": formatted_result
                 })
 
             result['fusion_complexity'] = operation_counters.copy()
             results[str(i)] = result
-            result['composition_complexity'] = complexity
+            # 处理 complexity 为 None 的情况
+            if complexity is None:
+                complexity = 0
+            result['composition_complexity'] = complexity + result['composition_complexity']
         return results
+        # 此处需要修改
+        # complexity中存在等式只有单侧数据，需要排查原因
+        
 
 
     # def get_counters(self):

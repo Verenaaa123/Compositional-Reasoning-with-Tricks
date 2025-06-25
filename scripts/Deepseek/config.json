@@ -1,0 +1,25 @@
+{
+    "login": {
+        "email": "${DEEPSEEK_EMAIL}",
+        "password": "${DEEPSEEK_PASSWORD}"
+    },
+    "browser": {
+        "headless": false,
+        "window_size": "1200,800",
+        "user_data_dir": "./chrome_profile_deepseek",
+        "timeout": 10
+    },
+    "automation": {
+        "wait_time": 1,
+        "retry_count": 3,
+        "auto_continue": true,
+        "enable_deep_thinking": true,
+        "response_timeout": 120,
+        "save_responses": true,
+        "close_browser": false,
+        "new_conversation_per_message": true
+    },
+    "cloudflare": {
+        "auto_solve": false
+    }
+}

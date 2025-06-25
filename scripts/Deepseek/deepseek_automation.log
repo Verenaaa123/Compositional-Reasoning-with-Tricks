@@ -1,0 +1,154 @@
+2025-06-10 16:41:10,202 - INFO - 启动浏览器...
+2025-06-10 16:41:10,203 - INFO - ====== WebDriver manager ======
+2025-06-10 16:41:10,327 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:10,643 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:10,919 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 16:41:10,924 - ERROR - 初始化时发生错误: [Errno 8] Exec format error: '/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-10 16:41:30,250 - INFO - 启动浏览器...
+2025-06-10 16:41:30,251 - INFO - ====== WebDriver manager ======
+2025-06-10 16:41:30,372 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:30,682 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:30,981 - INFO - There is no [mac64] chromedriver "137.0.7151.68" for browser google-chrome "137.0.7151" in cache
+2025-06-10 16:41:30,990 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:31,646 - INFO - WebDriver version 137.0.7151.68 selected
+2025-06-10 16:41:31,650 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/mac-arm64/chromedriver-mac-arm64.zip
+2025-06-10 16:41:31,650 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/mac-arm64/chromedriver-mac-arm64.zip
+2025-06-10 16:41:32,725 - INFO - Driver downloading response is 200
+2025-06-10 16:41:34,582 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:41:34,994 - INFO - Driver has been saved in cache [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68]
+2025-06-10 16:41:34,999 - ERROR - 初始化时发生错误: [Errno 8] Exec format error: '/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
+2025-06-10 16:44:35,802 - INFO - 启动浏览器...
+2025-06-10 16:44:35,802 - INFO - ====== WebDriver manager ======
+2025-06-10 16:44:35,958 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:44:36,233 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:44:36,557 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 16:44:54,641 - INFO - 浏览器启动成功
+2025-06-10 16:44:54,642 - INFO - 导航到 https://chat.deepseek.com
+2025-06-10 16:44:56,882 - INFO - 检测到登录页面，未登录
+2025-06-10 16:44:56,882 - INFO - 开始登录流程...
+2025-06-10 16:44:57,013 - INFO - 点击登录按钮
+2025-06-10 16:44:58,173 - INFO - 输入邮箱地址
+2025-06-10 16:44:59,239 - INFO - 输入密码
+2025-06-10 16:45:01,309 - ERROR - 登录过程中发生错误: Message: element click intercepted: Element <div role="button" class="ds-button ds-button--primary ds-button--filled ds-button--rect ds-button--block ds-button--l ds-sign-up-form__register-button" tabindex="0">...</div> is not clickable at point (600, 394). Other element would receive the click: <div id="cf-overlay" style="position: fixed; inset: 0px; background-color: rgba(0, 0, 0, 0.7); border: 1px solid grey; z-index: 10000; display: block;">...</div>
+  (Session info: chrome=137.0.7151.69)
+Stacktrace:
+0   chromedriver                        0x000000010518e654 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x00000001051868c8 cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000104cda714 cxxbridge1$string$len + 90428
+3   chromedriver                        0x0000000104d27324 cxxbridge1$string$len + 404812
+4   chromedriver                        0x0000000104d25890 cxxbridge1$string$len + 398008
+5   chromedriver                        0x0000000104d236a4 cxxbridge1$string$len + 389324
+6   chromedriver                        0x0000000104d22aa0 cxxbridge1$string$len + 386248
+7   chromedriver                        0x0000000104d17508 cxxbridge1$string$len + 339760
+8   chromedriver                        0x0000000104d16f94 cxxbridge1$string$len + 338364
+9   chromedriver                        0x0000000104d62de8 cxxbridge1$string$len + 649232
+10  chromedriver                        0x0000000104d159c8 cxxbridge1$string$len + 332784
+11  chromedriver                        0x0000000105152278 cxxbridge1$str$ptr + 2476360
+12  chromedriver                        0x000000010515550c cxxbridge1$str$ptr + 2489308
+13  chromedriver                        0x0000000105133a64 cxxbridge1$str$ptr + 2351412
+14  chromedriver                        0x0000000105155d94 cxxbridge1$str$ptr + 2491492
+15  chromedriver                        0x0000000105124d58 cxxbridge1$str$ptr + 2290728
+16  chromedriver                        0x0000000105175d60 cxxbridge1$str$ptr + 2622512
+17  chromedriver                        0x0000000105175eec cxxbridge1$str$ptr + 2622908
+18  chromedriver                        0x0000000105186514 cxxbridge1$str$ptr + 2690020
+19  libsystem_pthread.dylib             0x00000001864aa034 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001864a4e3c thread_start + 8
+
+2025-06-10 16:45:01,309 - ERROR - 登录失败
+2025-06-10 16:45:47,032 - INFO - 关闭浏览器
+2025-06-10 16:46:43,175 - INFO - 启动浏览器...
+2025-06-10 16:46:43,175 - INFO - ====== WebDriver manager ======
+2025-06-10 16:46:43,332 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:46:43,590 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:46:43,858 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 16:46:52,984 - INFO - 浏览器启动成功
+2025-06-10 16:46:52,984 - INFO - 导航到 https://chat.deepseek.com
+2025-06-10 16:46:54,948 - INFO - 检测到 Cloudflare 验证页面，开始处理...
+2025-06-10 16:47:06,243 - INFO - 检测到验证成功提示，等待页面跳转...
+2025-06-10 16:47:26,437 - WARNING - Cloudflare 验证处理超时（30秒），可能需要手动处理
+2025-06-10 16:47:26,437 - INFO - 等待30秒以便手动完成验证...
+2025-06-10 16:49:16,438 - INFO - 启动浏览器...
+2025-06-10 16:49:16,438 - INFO - ====== WebDriver manager ======
+2025-06-10 16:49:16,591 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:49:16,847 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 16:49:17,105 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 16:49:31,484 - INFO - 浏览器启动成功
+2025-06-10 16:49:31,485 - INFO - 导航到 https://chat.deepseek.com
+2025-06-10 16:49:33,842 - INFO - 检测到 Cloudflare 验证页面，开始处理...
+2025-06-10 16:49:33,842 - INFO - 自动解决 Cloudflare 验证已禁用，请手动完成验证
+2025-06-10 16:49:33,896 - INFO - 无法确定登录状态
+2025-06-10 16:49:33,896 - INFO - 开始登录流程...
+2025-06-10 16:49:34,015 - INFO - 未找到登录按钮，可能已在登录页面
+2025-06-10 17:06:20,395 - INFO - 启动浏览器...
+2025-06-10 17:06:20,396 - INFO - ====== WebDriver manager ======
+2025-06-10 17:06:20,553 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 17:06:20,801 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 17:06:21,078 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 17:06:31,709 - INFO - 浏览器启动成功
+2025-06-10 17:06:31,709 - INFO - 导航到 https://chat.deepseek.com
+2025-06-10 17:06:36,114 - INFO - 检测到登录页面，未登录
+2025-06-10 17:06:36,115 - INFO - 开始登录流程...
+2025-06-10 17:06:36,240 - INFO - 点击登录按钮
+2025-06-10 17:06:37,385 - INFO - 输入邮箱地址
+2025-06-10 17:06:38,443 - INFO - 输入密码
+2025-06-10 17:06:40,521 - ERROR - 登录过程中发生错误: Message: element click intercepted: Element <div role="button" class="ds-button ds-button--primary ds-button--filled ds-button--rect ds-button--block ds-button--l ds-sign-up-form__register-button" tabindex="0">...</div> is not clickable at point (600, 394). Other element would receive the click: <div id="cf-overlay" style="position: fixed; inset: 0px; background-color: rgba(0, 0, 0, 0.7); border: 1px solid grey; z-index: 10000; display: block;">...</div>
+  (Session info: chrome=137.0.7151.69)
+Stacktrace:
+0   chromedriver                        0x0000000100afa654 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x0000000100af28c8 cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x0000000100646714 cxxbridge1$string$len + 90428
+3   chromedriver                        0x0000000100693324 cxxbridge1$string$len + 404812
+4   chromedriver                        0x0000000100691890 cxxbridge1$string$len + 398008
+5   chromedriver                        0x000000010068f6a4 cxxbridge1$string$len + 389324
+6   chromedriver                        0x000000010068eaa0 cxxbridge1$string$len + 386248
+7   chromedriver                        0x0000000100683508 cxxbridge1$string$len + 339760
+8   chromedriver                        0x0000000100682f94 cxxbridge1$string$len + 338364
+9   chromedriver                        0x00000001006cede8 cxxbridge1$string$len + 649232
+10  chromedriver                        0x00000001006819c8 cxxbridge1$string$len + 332784
+11  chromedriver                        0x0000000100abe278 cxxbridge1$str$ptr + 2476360
+12  chromedriver                        0x0000000100ac150c cxxbridge1$str$ptr + 2489308
+13  chromedriver                        0x0000000100a9fa64 cxxbridge1$str$ptr + 2351412
+14  chromedriver                        0x0000000100ac1d94 cxxbridge1$str$ptr + 2491492
+15  chromedriver                        0x0000000100a90d58 cxxbridge1$str$ptr + 2290728
+16  chromedriver                        0x0000000100ae1d60 cxxbridge1$str$ptr + 2622512
+17  chromedriver                        0x0000000100ae1eec cxxbridge1$str$ptr + 2622908
+18  chromedriver                        0x0000000100af2514 cxxbridge1$str$ptr + 2690020
+19  libsystem_pthread.dylib             0x00000001864aa034 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001864a4e3c thread_start + 8
+
+2025-06-10 17:06:40,521 - ERROR - 登录失败
+2025-06-10 17:08:47,450 - INFO - 关闭浏览器
+2025-06-10 17:30:12,936 - INFO - 启动浏览器...
+2025-06-10 17:30:12,937 - INFO - ====== WebDriver manager ======
+2025-06-10 17:30:13,090 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 17:30:13,422 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-10 17:30:13,716 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/137.0.7151.68/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-06-10 17:30:22,980 - INFO - 浏览器启动成功
+2025-06-10 17:30:22,980 - INFO - 导航到 https://chat.deepseek.com
+2025-06-10 17:30:25,824 - INFO - 检测到已登录状态
+2025-06-10 17:30:25,825 - INFO - 已经处于登录状态
+2025-06-10 17:30:25,825 - INFO - 初始化完成
+2025-06-10 17:30:25,825 - INFO - 开始处理问题: 一句話回答我純數學上1+1=?
+2025-06-10 17:30:25,825 - INFO - 开启新对话会话...
+2025-06-10 17:30:25,825 - INFO - 重新导航到主页开启新对话...
+2025-06-10 17:30:29,554 - INFO - 检测到已登录状态
+2025-06-10 17:30:29,564 - INFO - 检测到已登录状态
+2025-06-10 17:30:29,564 - INFO - 已经处于登录状态
+2025-06-10 17:30:30,277 - INFO - 成功点击新建对话按钮
+2025-06-10 17:30:33,287 - INFO - 检查深度思考模式状态...
+2025-06-10 17:30:33,329 - INFO - 通过CSS选择器找到深度思考按钮: div[role='button'][class*='ds-button'][class*='primary']:has(.ad0c98fd)
+2025-06-10 17:30:33,333 - INFO - 深度思考模式已经激活，无需重复激活
+2025-06-10 17:30:33,333 - INFO - 新对话会话已准备就绪
+2025-06-10 17:30:33,333 - INFO - 发送消息: 一句話回答我純數學上1+1=?
+2025-06-10 17:30:33,333 - INFO - 检查深度思考模式状态...
+2025-06-10 17:30:33,352 - INFO - 通过CSS选择器找到深度思考按钮: div[role='button'][class*='ds-button'][class*='primary']:has(.ad0c98fd)
+2025-06-10 17:30:33,355 - INFO - 深度思考模式已经激活，无需重复激活
+2025-06-10 17:30:35,192 - INFO - 通过回车键发送消息
+2025-06-10 17:30:36,197 - INFO - 等待 AI 回复...
+2025-06-10 17:30:38,249 - INFO - 检测到AI开始回复 (aria-disabled=false)
+2025-06-10 17:31:12,574 - INFO - 检测到AI回复完成 (aria-disabled=true)
+2025-06-10 17:31:15,579 - INFO - 开始使用BeautifulSoup解析页面结构...
+2025-06-10 17:31:15,618 - INFO - 页面结构解析完成: {'root': 'div#root', 'theme_container': 'div.ds-theme', 'scrollable_container': 'div._8f60047.scrollable', 'deep_thinking_container': 'div._0f72b0b', 'ai_message_container': 'div._8f60047.scrollable', 'formal_answer_container': 'div.ds-markdown.ds-markdown--block'}
+2025-06-10 17:31:15,662 - INFO - 成功提取AI回复内容
+2025-06-10 17:31:15,662 - INFO - 问题处理完成
+2025-06-10 17:31:29,242 - INFO - 关闭浏览器

@@ -1,0 +1,886 @@
+[11972:257390:0611/150223.022416:INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:202] No machine level policy manager exists.
+[11972:257390:0611/150223.073068:WARNING:chrome/browser/extensions/extension_service.cc:359] --load-extension is not allowed in Google Chrome, ignoring.
+[11972:257390:0611/150224.745799:INFO:CONSOLE:1] "undefined", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150224.746151:INFO:CONSOLE:1] "Error", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150225.381877:INFO:CONSOLE:94] "🚀 ~ setTheme ~ themeType: system classTheme:  light", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (94)
+[11972:257390:0611/150225.382065:INFO:CONSOLE:1] "debug-navigator.userAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (1)
+[11972:257390:0611/150225.384527:INFO:CONSOLE:93] "[2025/6/11 15:02:25.382] 
+ 111-!!window.baxiaCommon status false undefined undefined", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150225.385938:INFO:CONSOLE:31] "🚀 ~ onMount ~ localToken: ", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150225.386887:INFO:CONSOLE:93] "[2025/6/11 15:02:25.386] 
+ request-url: /api/config ; RequestId: 6e842c55-926f-4ffa-92c0-56bb60752b0c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150225.609371:INFO:CONSOLE:472] "  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150225.631569:INFO:CONSOLE:93] "[2025/6/11 15:02:25.631] 
+ request-url: /api/models ; RequestId: 7233bc32-70f6-4c7b-8a1e-087cc41288d9", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150225.636839:INFO:CONSOLE:472] "  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150225.657936:INFO:CONSOLE:31] "detect Chrome false", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150225.738942:INFO:CONSOLE:472] "  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150225.740307:INFO:CONSOLE:472] "  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150225.741276:INFO:CONSOLE:472] " image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150225.834772:INFO:CONSOLE:2] "%c [APLUS] -- APLUS INIT SUCCESS background:#3B82FE; padding: 4px; padding-right: 8px; border-radius: 4px; color: #fff;", source:  (2)
+[11972:257390:0611/150226.370827:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150226.385322:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150226.389613:INFO:CONSOLE:93] "[2025/6/11 15:02:26.389] 
+ 111-!!window.baxiaCommon status true true undefined", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150226.389654:INFO:CONSOLE:93] "[2025/6/11 15:02:26.389] 
+ 111-initBaxiaConfig", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150226.389745:INFO:CONSOLE:93] "[2025/6/11 15:02:26.389] 
+ 111-initBaixa begin", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150226.390463:INFO:CONSOLE:93] "[2025/6/11 15:02:26.390] 
+ 111-initBaixa end", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150226.390521:INFO:CONSOLE:93] "[2025/6/11 15:02:26.390] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150233.482399:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:5155
+[11972:257390:0611/150233.656416:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:265059
+[11972:257390:0611/150233.816234:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:45153
+[11972:257390:0611/150234.161969:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:2200227
+[11972:257390:0611/150234.302827:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:4680
+[11972:257390:0611/150234.495801:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:118577
+[11972:257390:0611/150234.637068:WARNING:components/download/internal/background_service/controller_impl.cc:1187] Background download complete, client: 6, completion type: 0, file size:2747168
+[12019:258331:0611/150247.940158:ERROR:sandbox/mac/system_services.cc:31] SetApplicationIsDaemon: Error Domain=NSOSStatusErrorDomain Code=-50 "paramErr: error in user parameter list" (-50)
+[11972:257390:0611/150248.011179:INFO:CONSOLE:1] "The ScriptProcessorNode is deprecated. Use AudioWorkletNode instead. (https://bit.ly/audio-worklet)", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150248.015831:INFO:CONSOLE:198] "sendAplusEvent clkLogOn &typarm1=web&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150248.066890:INFO:CONSOLE:198] "sendAplusEvent clkLogOn &typarm1=web&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150248.192254:INFO:CONSOLE:0] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://chat.qwen.ai/auth?action=signin (0)
+[11972:257390:0611/150252.666636:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[12019:258403:0611/150252.669180:WARNING:services/audio/sync_reader.cc:148] ASR: No room in socket buffer.: Broken pipe (32)
+[11972:257390:0611/150253.203743:INFO:CONSOLE:0] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S1228122213%3A1749625372407454&client_id=452911428355-3lrs59r3icntb0d0e053n98fkg9ha1j3.apps.googleusercontent.com&nonce=I0PJsFJG61ZmbUHbr6G6&o2v=2&redirect_uri=https%3A%2F%2Fchat.qwen.ai%2Foauth%2Fgoogle%2Fcallback&response_type=code&scope=openid+email+profile&service=lso&state=TIGwl7FixWgGEuHajdPzZaAEiMEH8L&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPETRlN6cVxiyIjw0ueFayVYYpe10gKuvstcAQs5veMMZgCW4cLfHsSdoLefks_1aqerHUunAmT2AjTue0WFoDiFQ8KTaPsFv-mT-SusvyrFgv0ZSN8gxpZ8s0eVIUaSYMpHJp5kpeynwBTAUXlOpKAt7V2O8HK4wkHTQ_94mMez1lRZrZF7PorL77NUUC71bJ8Dcnwoq2tys-Z6my3WdlFq3d5wfsk0WOjxXy1gPGFIKRPRdNEndUQLOLYO3SGOushfUNAz_dS6s49XL8FVfqCY0z71IdS2aGHJ7THlcdkncPlJPaUBuLR3aGq2DI_og0c2bq1EtBhfKfTpkWEvz_u4MncGan-Z9FAAqsymoWj9-yYA6muB6Q2w_uVIEDxB93rhPAAWEH6FZhJih4klsRnwAvIpFsewT9MXhaM60UJS2oOy9y_Uc2g6Zw4Gbe2danUX89dQy5wR2C05CTlowTmu6kbSw%26flowName%3DGeneralOAuthFlow%26as%3DS1228122213%253A1749625372407454%26client_id%3D452911428355-3lrs59r3icntb0d0e053n98fkg9ha1j3.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fchat.qwen.ai&rart=ANgoxcd882MNC1QyD9NGZIOIgU76H-W6NXKfB5Envo8lO5Z30WgiXttRH7TLNJmM1bqnHyahiRw-TM-Et5TduWhyppb7eJzuLheATivC0z8aO0A8-MHXX9A (0)
+[11972:257390:0611/150253.210039:INFO:CONSOLE:441] "%c%s color: red; background: yellow; font-size: 24px; 警告！", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.zh_CN.VaoGOgFv6W4.es5.O/am=MQwAzJSPTB4CAXHg_5RZUGcBEhAyAAAAAAAAAABgCwAAYBwDQA/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlElS2aTtP2c9kmhu31O5zifnk6wYQ/m=_b,_tp (441)
+[11972:257390:0611/150253.210074:INFO:CONSOLE:441] "%c%s font-size: 18px; 使用此控制台可能会导致攻击程序利用 Self-XSS 攻击冒充您并窃取您的信息。
+请勿输入或粘贴您不明白的代码。", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.zh_CN.VaoGOgFv6W4.es5.O/am=MQwAzJSPTB4CAXHg_5RZUGcBEhAyAAAAAAAAAABgCwAAYBwDQA/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlElS2aTtP2c9kmhu31O5zifnk6wYQ/m=_b,_tp (441)
+[11972:257390:0611/150253.552615:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16384>32)
+[11972:257390:0611/150253.552663:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16384>32)
+[11972:257390:0611/150253.552693:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16384>32)
+[11972:257390:0611/150253.552722:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16384>32)
+[11972:257390:0611/150253.552762:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16384>32)
+[11972:257390:0611/150253.552815:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (16024>32)
+[11972:257390:0611/150253.552819:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (1048>32)
+[11972:257390:0611/150253.552912:WARNING:services/device/public/cpp/hid/hid_collection.cc:240] encountered report item with invalid report size (50>32)
+[11972:257390:0611/150254.050195:WARNING:chrome/browser/media/prefs/capture_device_ranking.h:255] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[11972:257390:0611/150254.050230:WARNING:chrome/browser/media/prefs/capture_device_ranking.h:255] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[11972:257390:0611/150254.050242:WARNING:chrome/browser/media/prefs/capture_device_ranking.h:255] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[11972:257390:0611/150254.050248:WARNING:chrome/browser/media/prefs/capture_device_ranking.h:255] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[11972:257390:0611/150328.254264:INFO:CONSOLE:1] "undefined", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150328.254522:INFO:CONSOLE:1] "Error", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150328.373724:INFO:CONSOLE:94] "🚀 ~ setTheme ~ themeType: system classTheme:  light", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (94)
+[11972:257390:0611/150328.374749:INFO:CONSOLE:1] "debug-navigator.userAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (1)
+[11972:257390:0611/150328.374983:INFO:CONSOLE:93] "[2025/6/11 15:03:28.373] 
+ 111-!!window.baxiaCommon status false undefined undefined", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150328.375916:INFO:CONSOLE:31] "🚀 ~ onMount ~ localToken: ", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150328.376602:INFO:CONSOLE:93] "[2025/6/11 15:03:28.376] 
+ request-url: /api/config ; RequestId: 51c73437-b1dd-4afd-a8e2-ed460fc0b36a", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150328.393901:INFO:CONSOLE:2] "%c [APLUS] -- APLUS INIT SUCCESS background:#3B82FE; padding: 4px; padding-right: 8px; border-radius: 4px; color: #fff;", source:  (2)
+[11972:257390:0611/150328.443852:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150328.475536:INFO:CONSOLE:93] "[2025/6/11 15:03:28.475] 
+ request-url: /api/v1/auths/ ; RequestId: 36100a1e-75f5-4524-b3f1-e638cfbcb8f7", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150328.477249:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150328.482675:INFO:CONSOLE:31] "detect Chrome false", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150328.499268:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150328.598687:INFO:CONSOLE:5] "null 88888", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/5.VNudtp3l.js (5)
+[11972:257390:0611/150328.598892:INFO:CONSOLE:93] "[2025/6/11 15:03:28.598] 
+ request-url: /api/models ; RequestId: 196198bd-5e82-4e9e-b347-12a7bc124af9", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150328.600214:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150328.612512:INFO:CONSOLE:198] "`aes` or `AESPluginEvent` not found.", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150328.612591:INFO:CONSOLE:93] "[2025/6/11 15:03:28.612] 
+ request-url: /api/config ; RequestId: 4480ebd1-33cb-4eb3-9a97-473b0e760adf", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150328.613664:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150328.623454:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.006873:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.045390:INFO:CONSOLE:1] "undefined", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150329.045588:INFO:CONSOLE:1] "Error", source: https://o.alicdn.com/frontend-lib/common-lib/jquery.min.js (1)
+[11972:257390:0611/150329.128563:INFO:CONSOLE:2] "%c [APLUS] -- APLUS INIT SUCCESS background:#3B82FE; padding: 4px; padding-right: 8px; border-radius: 4px; color: #fff;", source:  (2)
+[11972:257390:0611/150329.198264:INFO:CONSOLE:94] "🚀 ~ setTheme ~ themeType: system classTheme:  light", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (94)
+[11972:257390:0611/150329.198307:INFO:CONSOLE:1] "debug-navigator.userAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (1)
+[11972:257390:0611/150329.198335:INFO:CONSOLE:93] "[2025/6/11 15:03:29.197] 
+ 111-!!window.baxiaCommon status false undefined undefined", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.198427:INFO:CONSOLE:31] "🚀 ~ onMount ~ localToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3OWUzNDE0LTQwMmYtNGZkMC05YjAzLTFiNTUxMGU0OGUwMSIsImV4cCI6MTc1MjIxNzQwOH0.s8KEn51RGLuvWkBF6F8X_40uhriNSAWBUm2LSJZo_2I", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150329.198440:INFO:CONSOLE:93] "[2025/6/11 15:03:29.198] 
+ request-url: /api/config ; RequestId: 345f3e20-d3be-4878-88fa-cc1ef1ede42d", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.294350:INFO:CONSOLE:93] "[2025/6/11 15:03:29.294] 
+ request-url: /api/v1/auths/ ; RequestId: bc678d57-1530-4dd2-8189-8c2da2b7ffc3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.354588:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.406387:INFO:CONSOLE:93] "[2025/6/11 15:03:29.406] 
+ request-url: /api/models ; RequestId: 7f522dd7-9739-453c-8513-1a003173dbf1", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.407797:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.411353:INFO:CONSOLE:198] "`aes` or `AESPluginEvent` not found.", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150329.414199:INFO:CONSOLE:93] "[2025/6/11 15:03:29.414] 
+ request-url: /api/v2/mcp/list?language=zh-CN ; RequestId: b270b5b7-b206-4734-8505-b5833a17b0cd", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.415619:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.417199:INFO:CONSOLE:31] "detect Chrome false", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/nodes/0.BrzmO2VH.js (31)
+[11972:257390:0611/150329.430751:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.705663:INFO:CONSOLE:93] "[2025/6/11 15:03:29.705] 
+ request-url: /api/v2/users/user/settings ; RequestId: 8e802b42-b600-4974-9ca4-79c4e7890369", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.707862:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.731300:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.801505:INFO:CONSOLE:93] "[2025/6/11 15:03:29.801] 
+ request-url: /api/v1/users/user/settings ; RequestId: fdc51e4c-f7b5-4654-8774-33f93c2177f5", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.803452:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.828080:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257441:0611/150329.847159:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/150329.900850:INFO:CONSOLE:93] "[2025/6/11 15:03:29.900] 
+ request-url: /api/v1/configs/banners ; RequestId: 4d31f00b-b6a8-419e-9a8c-b5a1c021ef38", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.902546:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.930102:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object]  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150329.939600:INFO:CONSOLE:93] "[2025/6/11 15:03:29.939] 
+ 111-!!window.baxiaCommon status true true undefined", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.939671:INFO:CONSOLE:93] "[2025/6/11 15:03:29.939] 
+ 111-initBaxiaConfig", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.939752:INFO:CONSOLE:93] "[2025/6/11 15:03:29.939] 
+ 111-initBaixa begin", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.940017:INFO:CONSOLE:93] "[2025/6/11 15:03:29.939] 
+ 111-initBaixa end", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.953078:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150329.969300:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150329.971687:INFO:CONSOLE:93] "[2025/6/11 15:03:29.971] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.972268:INFO:CONSOLE:93] "[2025/6/11 15:03:29.972] 
+ request-url: /api/v1/users/user/settings ; RequestId: 88ca2d67-4d01-4447-bc87-5219a21f7bff", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.973553:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150329.978630:INFO:CONSOLE:93] "[2025/6/11 15:03:29.978] 
+ request-url: /api/v1/chats/all/tags ; RequestId: 0f4c8081-8e42-4a3e-aa82-95dfc165c6fe", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150329.983660:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.191109:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150330.213286:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.216679:INFO:CONSOLE:93] "[2025/6/11 15:03:30.216] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150330.236517:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.417070:INFO:CONSOLE:93] "[2025/6/11 15:03:30.416] 
+ request-url: /api/v1/chats/pinned ; RequestId: 7516bbc6-ba91-42db-9c98-39952f22b785", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150330.419591:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150330.438240:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.461936:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.624953:INFO:CONSOLE:93] "[2025/6/11 15:03:30.624] 
+ request-url: /api/v1/folders/ ; RequestId: 871eb48f-8932-4c15-84cd-20c53e8b3c98", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150330.627046:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.632222:INFO:CONSOLE:93] "[2025/6/11 15:03:30.632] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150330.632414:INFO:CONSOLE:93] "[2025/6/11 15:03:30.632] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 84d88a8e-1e91-41e3-9125-5c4ab69527e7", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150330.633418:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150330.651389:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150330.654044:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257441:0611/150359.620335:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/150400.322538:INFO:CONSOLE:1] "The ScriptProcessorNode is deprecated. Use AudioWorkletNode instead. (https://bit.ly/audio-worklet)", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150400.331677:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150445.302335:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150445.302838:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/150445.303623:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150445.305877:INFO:CONSOLE:93] "[2025/6/11 15:04:45.305] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150445.305919:INFO:CONSOLE:93] "[2025/6/11 15:04:45.305] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150445.315231:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150445.324441:INFO:CONSOLE:93] "[2025/6/11 15:04:45.324] 
+ request-url: /api/v1/chats/new ; RequestId: 9a3afadc-d575-4ec9-aa63-d5f19c9b4f38", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150445.325206:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150445.340860:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150445.373105:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150446.021617:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150446.030455:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150446.037436:INFO:CONSOLE:93] "[2025/6/11 15:04:46.037] 
+ request-url: /api/v1/users/user/settings ; RequestId: 8502a665-fdc8-4afa-a260-d4478e82f03c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150446.038972:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150446.049117:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150446.059110:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150446.059733:INFO:CONSOLE:93] "[2025/6/11 15:04:46.059] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150446.060295:INFO:CONSOLE:93] "[2025/6/11 15:04:46.060] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: a886ae7d-af53-4ce5-92da-721fbe441bc8", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150446.060828:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150446.077070:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150446.079956:INFO:CONSOLE:93] "[2025/6/11 15:04:46.079] 
+ request-url: /api/chat/completions ; RequestId: 6329f028-8757-4609-903f-145d02f6f220", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150446.080964:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150446.094258:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150446.100938:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150446.978114:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=e650aa29-29d5-479d-b52e-5ef9cd8e3b2b&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257441:0611/150458.516344:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/150458.599050:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/150458.604600:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150458.630426:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150458.655809:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150458.938901:INFO:CONSOLE:93] "[2025/6/11 15:04:58.938] 
+ request-url: /api/task/title/completions ; RequestId: 1a5bfa0a-9ec2-4b2e-a0db-b66f324f489b", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150458.940235:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150458.955951:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150458.980496:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150459.894023:INFO:CONSOLE:93] "[2025/6/11 15:04:59.893] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150459.896482:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150459.929621:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150459.936699:INFO:CONSOLE:93] "[2025/6/11 15:04:59.936] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 5041e855-fb8b-490d-bfa1-3a6e89573a88", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150459.938280:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150459.956124:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150459.960662:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150500.178962:INFO:CONSOLE:93] "[2025/6/11 15:05:00.178] 
+ request-url: /api/v1/chats/e650aa29-29d5-479d-b52e-5ef9cd8e3b2b/tags ; RequestId: 6f84d98b-b7ab-4063-90bb-d06eb77deece", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150500.180332:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150500.204370:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150500.228375:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150500.401633:INFO:CONSOLE:93] "[2025/6/11 15:05:00.401] 
+ request-url: /api/task/tags/completions ; RequestId: 54d8b31b-da24-4c7b-aee6-ddf657c0f853", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150500.402795:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150500.426894:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150500.451148:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150501.984820:INFO:CONSOLE:93] "[2025/6/11 15:05:01.984] 
+ request-url: /api/v1/chats/e650aa29-29d5-479d-b52e-5ef9cd8e3b2b/tags ; RequestId: 99950883-30d8-45b1-8fe3-eea776e32536", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150501.987095:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150502.017072:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150502.042310:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150502.342647:INFO:CONSOLE:93] "[2025/6/11 15:05:02.342] 
+ request-url: /api/v1/chats/e650aa29-29d5-479d-b52e-5ef9cd8e3b2b/tags ; RequestId: e3a11c0f-be91-41b8-9e0f-f3c3a7c65554", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150502.344551:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150502.371041:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150502.396112:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150502.752379:INFO:CONSOLE:93] "[2025/6/11 15:05:02.752] 
+ request-url: /api/v1/chats/e650aa29-29d5-479d-b52e-5ef9cd8e3b2b/tags ; RequestId: 0b5babf3-7ba3-466f-accd-ac44f528d12a", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150502.754290:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150502.779926:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150502.804268:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150503.084758:INFO:CONSOLE:93] "[2025/6/11 15:05:03.084] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150503.085006:INFO:CONSOLE:93] "[2025/6/11 15:05:03.084] 
+ request-url: /api/v1/chats/all/tags ; RequestId: 210c4f72-001b-4b94-94c8-706178d3e125", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150503.086512:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150503.111886:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150503.118964:INFO:CONSOLE:93] "[2025/6/11 15:05:03.118] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150503.119090:INFO:CONSOLE:93] "[2025/6/11 15:05:03.119] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 9c7734c4-8994-4d88-b357-c3e8e6db724c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150503.120579:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150503.137008:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150503.140865:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150520.565938:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257441:0611/150658.097892:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/150724.246628:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150724.259343:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150724.265020:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150724.273103:INFO:CONSOLE:93] "[2025/6/11 15:07:24.273] 
+ request-url: /api/v1/users/user/settings ; RequestId: 56192e43-0ad2-40e9-a279-5924e23f827a", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150724.274576:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150724.297896:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150755.163708:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150840.109934:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150840.109985:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/150840.110015:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.110029:INFO:CONSOLE:93] "[2025/6/11 15:08:40.106] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.110041:INFO:CONSOLE:93] "[2025/6/11 15:08:40.106] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.115674:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.122624:INFO:CONSOLE:93] "[2025/6/11 15:08:40.122] 
+ request-url: /api/v1/chats/new ; RequestId: 7b68df82-7aa5-452e-a0a9-04c6b2942d90", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.123284:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150840.139594:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150840.162042:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150840.363527:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.370619:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.378477:INFO:CONSOLE:93] "[2025/6/11 15:08:40.378] 
+ request-url: /api/v1/users/user/settings ; RequestId: 08204aa9-f52d-43f5-963e-88efa77310c3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.380172:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150840.389284:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.399013:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/150840.399662:INFO:CONSOLE:93] "[2025/6/11 15:08:40.399] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.399893:INFO:CONSOLE:93] "[2025/6/11 15:08:40.399] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 46a4cccb-6d52-48bc-bac0-65214d10fced", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.400463:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150840.415967:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150840.417999:INFO:CONSOLE:93] "[2025/6/11 15:08:40.417] 
+ request-url: /api/chat/completions ; RequestId: e56d2090-993a-421c-b061-78526b2b036b", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150840.419020:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150840.432980:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150840.440293:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150841.447675:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/150857.459869:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/150857.465054:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150857.492859:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150857.516711:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150857.859994:INFO:CONSOLE:93] "[2025/6/11 15:08:57.859] 
+ request-url: /api/task/title/completions ; RequestId: 792141f9-f8aa-4b44-81a9-951324b38a83", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150857.861458:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150857.890299:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150857.914628:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150858.832050:INFO:CONSOLE:93] "[2025/6/11 15:08:58.831] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150858.833751:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150858.860501:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150858.869398:INFO:CONSOLE:93] "[2025/6/11 15:08:58.869] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 36a507cf-00d8-4e67-a580-52a54467e3dd", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150858.870970:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150858.891311:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150858.894704:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150859.309452:INFO:CONSOLE:93] "[2025/6/11 15:08:59.309] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979/tags ; RequestId: 40ea4da6-8abc-42ee-8971-a10f8f8a9124", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150859.310663:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150859.335515:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150859.359357:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150859.532831:INFO:CONSOLE:93] "[2025/6/11 15:08:59.532] 
+ request-url: /api/task/tags/completions ; RequestId: 967f87bf-7b74-4b87-97d2-a0855eb70a66", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150859.534179:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150859.559969:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150859.583475:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150900.650540:INFO:CONSOLE:93] "[2025/6/11 15:09:00.650] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979/tags ; RequestId: 9610b14e-1591-4b45-9e9f-1ba58a5566e8", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150900.652076:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150900.678893:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150900.703597:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150901.291074:INFO:CONSOLE:93] "[2025/6/11 15:09:01.290] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979/tags ; RequestId: 721fd055-e6f5-4f7b-bec7-e5e2f03c62cd", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150901.292987:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150901.322309:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150901.345374:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150901.904024:INFO:CONSOLE:93] "[2025/6/11 15:09:01.903] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979/tags ; RequestId: c55f04fa-86c7-4af9-97b3-30a6f96f4482", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150901.905508:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150901.931680:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150901.957878:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150902.828818:INFO:CONSOLE:93] "[2025/6/11 15:09:02.828] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150902.829124:INFO:CONSOLE:93] "[2025/6/11 15:09:02.828] 
+ request-url: /api/v1/chats/all/tags ; RequestId: 8499cff0-7c17-40c8-98ee-b638e43fa487", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150902.831427:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150902.863271:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150902.870857:INFO:CONSOLE:93] "[2025/6/11 15:09:02.870] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150902.871019:INFO:CONSOLE:93] "[2025/6/11 15:09:02.870] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 78e9d332-b828-4fae-ac3b-fd9d08954559", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/150902.872546:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/150902.890295:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150902.894081:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/150915.550468:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257441:0611/150952.480064:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/151119.443273:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151119.456891:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151119.463518:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151119.472169:INFO:CONSOLE:93] "[2025/6/11 15:11:19.472] 
+ request-url: /api/v1/users/user/settings ; RequestId: aa8d2c92-af35-497e-9dc4-3265b098b52d", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151119.473957:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151119.497039:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151150.380486:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151235.257351:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151235.257625:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/151235.258343:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.259636:INFO:CONSOLE:93] "[2025/6/11 15:12:35.259] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.259676:INFO:CONSOLE:93] "[2025/6/11 15:12:35.259] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.268280:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.275624:INFO:CONSOLE:93] "[2025/6/11 15:12:35.275] 
+ request-url: /api/v1/chats/new ; RequestId: b0d68868-9b0a-409c-982a-f3dd5bb05e54", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.279824:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151235.298230:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151235.337633:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151235.531511:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.537632:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.544772:INFO:CONSOLE:93] "[2025/6/11 15:12:35.544] 
+ request-url: /api/v1/users/user/settings ; RequestId: bdb764fb-2a32-4b3c-9719-aa04b3a0e25d", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.546271:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151235.554857:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.563899:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151235.564835:INFO:CONSOLE:93] "[2025/6/11 15:12:35.564] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.565035:INFO:CONSOLE:93] "[2025/6/11 15:12:35.565] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: cea5389d-28da-4e5e-8fdc-6681248e2c85", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.565554:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151235.581006:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151235.583089:INFO:CONSOLE:93] "[2025/6/11 15:12:35.583] 
+ request-url: /api/chat/completions ; RequestId: 92972b6b-9236-4116-b88b-ac141cb2f986", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151235.584124:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151235.598229:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151235.604930:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151236.489662:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=1d2b38de-0638-4077-a4ce-35944485b90d&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151244.216090:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/151244.219806:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151244.244011:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151244.267709:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151244.530729:INFO:CONSOLE:93] "[2025/6/11 15:12:44.530] 
+ request-url: /api/task/title/completions ; RequestId: 76de7a4f-7182-4f4e-9ea5-20354dad3ce5", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151244.532876:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151244.563254:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151244.588778:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.222417:INFO:CONSOLE:93] "[2025/6/11 15:12:45.222] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151245.224839:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151245.255677:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.264136:INFO:CONSOLE:93] "[2025/6/11 15:12:45.264] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 0e6d8c87-9473-46d8-8db8-af90d9ca819e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151245.265633:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151245.282495:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.286358:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.635937:INFO:CONSOLE:93] "[2025/6/11 15:12:45.635] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d/tags ; RequestId: 66306daf-1c46-4e1e-9bab-54fb522b137e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151245.637545:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151245.660361:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.684986:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.870148:INFO:CONSOLE:93] "[2025/6/11 15:12:45.869] 
+ request-url: /api/task/tags/completions ; RequestId: dc19bb43-92ef-4e7e-a0c6-cb971ef9eb26", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151245.871555:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151245.895217:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151245.919573:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151246.949284:INFO:CONSOLE:93] "[2025/6/11 15:12:46.949] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d/tags ; RequestId: e7eb3868-4ddf-4a19-98b2-cfc42763c33c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151246.951453:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151246.982572:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151247.007374:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151247.319885:INFO:CONSOLE:93] "[2025/6/11 15:12:47.319] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d/tags ; RequestId: 7d5ca282-09b1-4d0b-913d-1794474ebbc2", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151247.322044:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151247.349889:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151247.374465:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151247.730637:INFO:CONSOLE:93] "[2025/6/11 15:12:47.730] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d/tags ; RequestId: 0982f444-5788-49dd-bd83-d0cdd48e7ba8", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151247.732253:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151247.759277:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151247.782685:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151248.314622:INFO:CONSOLE:93] "[2025/6/11 15:12:48.314] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151248.314908:INFO:CONSOLE:93] "[2025/6/11 15:12:48.314] 
+ request-url: /api/v1/chats/all/tags ; RequestId: ec9b6278-0b56-4bcf-9c5e-37d73054a27e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151248.316989:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151248.343718:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151248.351618:INFO:CONSOLE:93] "[2025/6/11 15:12:48.351] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151248.351754:INFO:CONSOLE:93] "[2025/6/11 15:12:48.351] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 331cff9f-c42f-4bad-9d34-dede5aeceae6", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151248.353347:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151248.370551:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151248.374268:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257441:0611/151254.145457:ERROR:google_apis/gcm/engine/mcs_client.cc:748] Received close command, resetting connection.
+[11972:257390:0611/151310.754146:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151437.296665:INFO:CONSOLE:93] "[2025/6/11 15:14:37.296] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151437.311396:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object]  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151437.319184:INFO:CONSOLE:93] "[2025/6/11 15:14:37.319] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979 ; RequestId: ea83475e-15a3-455b-ace7-a571dff4d829", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151437.320403:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151437.337008:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151437.348113:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object]  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151437.363229:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151437.550292:INFO:CONSOLE:93] "[2025/6/11 15:14:37.550] 
+ request-url: /api/v1/chats/85c0ed6e-6e5c-4e4b-8e16-1d43acdd2979/tags ; RequestId: c3e7119d-e894-4777-9aae-03f85e6188a3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151437.551566:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151437.568368:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151437.592176:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151437.781395:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151437.782964:INFO:CONSOLE:93] "[2025/6/11 15:14:37.782] 
+ request-url: /api/v1/users/user/settings ; RequestId: c416a978-27c6-4a2c-9847-35bb9a6cfdb0", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151437.784729:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151437.797837:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151437.809771:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151437.816718:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.430363:INFO:CONSOLE:93] "[2025/6/11 15:14:41.429] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151441.438019:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object]  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151441.445528:INFO:CONSOLE:93] "[2025/6/11 15:14:41.445] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d ; RequestId: b84be651-359b-473d-b917-f77056b9fa90", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151441.446411:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151441.462617:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.466829:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object]  999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151441.486803:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.649413:INFO:CONSOLE:93] "[2025/6/11 15:14:41.649] 
+ request-url: /api/v1/chats/1d2b38de-0638-4077-a4ce-35944485b90d/tags ; RequestId: 3b0c5d6d-6ba9-4420-946f-ed34512819fd", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151441.650369:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151441.666108:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.689946:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.857676:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151441.859310:INFO:CONSOLE:93] "[2025/6/11 15:14:41.859] 
+ request-url: /api/v1/users/user/settings ; RequestId: 0838d00c-347e-498e-ba6b-d9dd9b15a367", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151441.861766:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151441.878552:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151441.888150:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151441.893220:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151514.172734:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151514.181606:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151514.187279:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151514.191529:INFO:CONSOLE:93] "[2025/6/11 15:15:14.191] 
+ request-url: /api/v1/users/user/settings ; RequestId: b0f385e1-055d-4860-ac29-f249144edc32", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151514.192953:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151514.215238:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257441:0611/151538.979060:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[11972:257390:0611/151544.961792:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151629.655593:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151629.655861:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/151629.656471:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.657359:INFO:CONSOLE:93] "[2025/6/11 15:16:29.657] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.657393:INFO:CONSOLE:93] "[2025/6/11 15:16:29.657] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.664184:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.670152:INFO:CONSOLE:93] "[2025/6/11 15:16:29.670] 
+ request-url: /api/v1/chats/new ; RequestId: dae2306f-6dea-4e38-b99c-7b1b4f1df24b", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.670827:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151629.686354:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151629.709987:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151629.908119:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.914723:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.921554:INFO:CONSOLE:93] "[2025/6/11 15:16:29.921] 
+ request-url: /api/v1/users/user/settings ; RequestId: e7a636cc-002f-465d-9116-f917e9922f5e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.923152:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151629.932506:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.941740:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151629.942305:INFO:CONSOLE:93] "[2025/6/11 15:16:29.942] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.942489:INFO:CONSOLE:93] "[2025/6/11 15:16:29.942] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 1cf2128f-7112-4947-b047-c6d6fded2e8f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.943000:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151629.957999:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151629.959964:INFO:CONSOLE:93] "[2025/6/11 15:16:29.959] 
+ request-url: /api/chat/completions ; RequestId: 7d014ba9-0901-4a47-8a5b-6fd7af670935", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151629.961277:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151629.976181:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151629.982680:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151630.822969:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=8432a541-e421-47f5-a390-31db4914a719&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151643.655479:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/151643.658721:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151643.683611:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151643.707336:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151643.974028:INFO:CONSOLE:93] "[2025/6/11 15:16:43.973] 
+ request-url: /api/task/title/completions ; RequestId: eb638207-4775-42aa-8f34-226b0db3e4d5", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151643.975509:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151644.001783:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151644.025338:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151644.703073:INFO:CONSOLE:93] "[2025/6/11 15:16:44.702] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151644.703771:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151644.719872:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151644.725698:INFO:CONSOLE:93] "[2025/6/11 15:16:44.725] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: d331ad1c-f219-4b15-a284-1b52cd6e8da6", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151644.726864:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151644.743249:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151644.746998:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151645.033119:INFO:CONSOLE:93] "[2025/6/11 15:16:45.033] 
+ request-url: /api/v1/chats/8432a541-e421-47f5-a390-31db4914a719/tags ; RequestId: b74d3472-a91f-47db-83c2-1844ab2c3fee", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151645.033747:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151645.050333:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151645.074988:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151645.249829:INFO:CONSOLE:93] "[2025/6/11 15:16:45.249] 
+ request-url: /api/task/tags/completions ; RequestId: 39d72cde-1291-4def-8b75-0cd096b462f7", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151645.250485:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151645.265052:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151645.289477:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151646.351628:INFO:CONSOLE:93] "[2025/6/11 15:16:46.351] 
+ request-url: /api/v1/chats/8432a541-e421-47f5-a390-31db4914a719/tags ; RequestId: aeb42c04-2e71-496a-b018-9d15aa464bfe", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151646.352250:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151646.366817:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151646.390694:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151646.738725:INFO:CONSOLE:93] "[2025/6/11 15:16:46.738] 
+ request-url: /api/v1/chats/8432a541-e421-47f5-a390-31db4914a719/tags ; RequestId: a19e79db-d47d-4136-b5fb-b0ff0d649c5f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151646.739349:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151646.756163:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151646.779932:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151647.085369:INFO:CONSOLE:93] "[2025/6/11 15:16:47.085] 
+ request-url: /api/v1/chats/8432a541-e421-47f5-a390-31db4914a719/tags ; RequestId: 267b8473-7cdc-4071-a1f9-f84e32bc1802", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151647.086819:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151647.113229:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151647.136210:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151647.553983:INFO:CONSOLE:93] "[2025/6/11 15:16:47.553] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151647.554143:INFO:CONSOLE:93] "[2025/6/11 15:16:47.554] 
+ request-url: /api/v1/chats/all/tags ; RequestId: d4abc83f-aa24-4bbd-8d5f-8889dbd8afee", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151647.555180:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151647.577599:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151647.583987:INFO:CONSOLE:93] "[2025/6/11 15:16:47.583] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151647.584123:INFO:CONSOLE:93] "[2025/6/11 15:16:47.584] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 93a003bf-e7a2-4532-9b1f-862c94f536f6", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151647.585507:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/151647.602324:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151647.605887:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151704.722396:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151908.147037:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/151908.161569:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151908.173258:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/151908.182013:INFO:CONSOLE:93] "[2025/6/11 15:19:08.181] 
+ request-url: /api/v1/users/user/settings ; RequestId: e7cd4d48-7975-45a0-b36e-2686b7b0d6e3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/151908.183712:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151908.208169:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/151939.061061:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152023.806671:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152023.806931:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/152023.807567:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152023.808625:INFO:CONSOLE:93] "[2025/6/11 15:20:23.808] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152023.808669:INFO:CONSOLE:93] "[2025/6/11 15:20:23.808] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152023.819895:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152023.826149:INFO:CONSOLE:93] "[2025/6/11 15:20:23.826] 
+ request-url: /api/v1/chats/new ; RequestId: eeb11b76-7a83-42b4-88b5-b75663166b6c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152023.826857:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152023.843517:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152023.866641:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152024.065805:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152024.071833:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152024.078138:INFO:CONSOLE:93] "[2025/6/11 15:20:24.078] 
+ request-url: /api/v1/users/user/settings ; RequestId: 7994ea13-2962-47b4-8ca4-d787c37ce6da", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152024.079704:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152024.084466:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152024.093674:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152024.094278:INFO:CONSOLE:93] "[2025/6/11 15:20:24.094] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152024.094490:INFO:CONSOLE:93] "[2025/6/11 15:20:24.094] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 78a72abb-d652-48c4-9a02-9a0d81712f82", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152024.095042:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152024.111899:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152024.118280:INFO:CONSOLE:93] "[2025/6/11 15:20:24.118] 
+ request-url: /api/chat/completions ; RequestId: 877c0622-6d90-45ab-a9e0-6f8c929bad50", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152024.119607:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152024.135235:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152024.142949:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152025.161737:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=f4eba0f1-fc30-4396-ac67-52f9c5388817&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152036.006855:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/152036.012121:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152036.035013:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152036.058895:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152036.303825:INFO:CONSOLE:93] "[2025/6/11 15:20:36.303] 
+ request-url: /api/task/title/completions ; RequestId: 47bb3c6d-ec86-43c5-8d65-1a5d79a3b21b", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152036.305100:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152036.331254:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152036.354550:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.097548:INFO:CONSOLE:93] "[2025/6/11 15:20:37.097] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152037.099846:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152037.132025:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.143064:INFO:CONSOLE:93] "[2025/6/11 15:20:37.142] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 0a978484-f994-4b4c-8e63-5017a100985b", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152037.144496:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152037.164195:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.167752:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.467247:INFO:CONSOLE:93] "[2025/6/11 15:20:37.467] 
+ request-url: /api/v1/chats/f4eba0f1-fc30-4396-ac67-52f9c5388817/tags ; RequestId: d59d21b1-7e87-4a63-be5b-9d847f613a7f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152037.468703:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152037.498083:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.522909:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.694593:INFO:CONSOLE:93] "[2025/6/11 15:20:37.694] 
+ request-url: /api/task/tags/completions ; RequestId: 43e7c064-83e6-465d-b090-880dbb8f6ce3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152037.695791:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152037.721533:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152037.745612:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152038.942182:INFO:CONSOLE:93] "[2025/6/11 15:20:38.942] 
+ request-url: /api/v1/chats/f4eba0f1-fc30-4396-ac67-52f9c5388817/tags ; RequestId: 50cb7092-1af5-47f7-aee1-b0bd5dfa7332", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152038.943670:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152038.970322:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152038.995006:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152039.564622:INFO:CONSOLE:93] "[2025/6/11 15:20:39.564] 
+ request-url: /api/v1/chats/f4eba0f1-fc30-4396-ac67-52f9c5388817/tags ; RequestId: ce4865f9-e407-49ab-a396-01a1f2258d1a", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152039.566367:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152039.594275:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152039.618836:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152040.168567:INFO:CONSOLE:93] "[2025/6/11 15:20:40.168] 
+ request-url: /api/v1/chats/f4eba0f1-fc30-4396-ac67-52f9c5388817/tags ; RequestId: 3a34ef05-90f7-4a5c-8917-6f2f280379b9", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152040.170200:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152040.198063:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152040.222288:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152040.866006:INFO:CONSOLE:93] "[2025/6/11 15:20:40.865] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152040.866117:INFO:CONSOLE:93] "[2025/6/11 15:20:40.866] 
+ request-url: /api/v1/chats/all/tags ; RequestId: 04da817f-42e6-4525-b06f-14840035b8bb", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152040.866935:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152040.887639:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152040.895406:INFO:CONSOLE:93] "[2025/6/11 15:20:40.895] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152040.895521:INFO:CONSOLE:93] "[2025/6/11 15:20:40.895] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 6fa2c98c-92fc-4f7a-bd9a-6bb8bdb1a64e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152040.897296:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152040.912615:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152040.916164:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152058.966518:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152302.559324:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152302.571682:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152302.578169:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152302.584964:INFO:CONSOLE:93] "[2025/6/11 15:23:02.584] 
+ request-url: /api/v1/users/user/settings ; RequestId: f594965b-3451-4779-a7d5-f0e20c1e0469", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152302.587128:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152302.613082:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152333.343584:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152418.079677:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152418.079941:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/152418.080551:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152418.081472:INFO:CONSOLE:93] "[2025/6/11 15:24:18.081] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152418.081501:INFO:CONSOLE:93] "[2025/6/11 15:24:18.081] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152418.087684:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152418.093617:INFO:CONSOLE:93] "[2025/6/11 15:24:18.093] 
+ request-url: /api/v1/chats/new ; RequestId: 09c18a2e-97e0-46df-b69a-7b207495e6a3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152418.094240:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152418.110352:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152418.132687:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152419.318674:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152419.327644:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152419.335792:INFO:CONSOLE:93] "[2025/6/11 15:24:19.335] 
+ request-url: /api/v1/users/user/settings ; RequestId: 85714059-c5d5-4c75-b135-47c332886175", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152419.338198:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152419.348260:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152419.358318:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152419.359185:INFO:CONSOLE:93] "[2025/6/11 15:24:19.359] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152419.359340:INFO:CONSOLE:93] "[2025/6/11 15:24:19.359] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 1745ead2-8b52-4c39-8a4d-e6e84e5cf9ac", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152419.359961:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152419.377074:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152419.379110:INFO:CONSOLE:93] "[2025/6/11 15:24:19.379] 
+ request-url: /api/chat/completions ; RequestId: eeb80e2e-5c9d-4ba4-ac79-cbe3c5b768ce", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152419.380146:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152419.396242:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152419.402859:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152421.794796:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=36d0aef9-1286-4047-ae6d-0d6b925c4b78&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152433.118647:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/152433.124536:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152433.156800:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152433.180569:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152433.462724:INFO:CONSOLE:93] "[2025/6/11 15:24:33.462] 
+ request-url: /api/task/title/completions ; RequestId: 97e5407b-5cc5-46d8-bf7c-63f2b0564fbf", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152433.464828:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152433.495908:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152433.520343:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.021300:INFO:CONSOLE:93] "[2025/6/11 15:24:37.020] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152437.023571:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152437.055783:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.063129:INFO:CONSOLE:93] "[2025/6/11 15:24:37.063] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 04497deb-d8d3-4223-b64d-07a5d64039d5", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152437.064705:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152437.082539:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.086388:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.383263:INFO:CONSOLE:93] "[2025/6/11 15:24:37.383] 
+ request-url: /api/v1/chats/36d0aef9-1286-4047-ae6d-0d6b925c4b78/tags ; RequestId: 1b574ccb-0f0f-42ed-b70b-e2022d2cfffe", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152437.385410:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152437.412192:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.437464:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.604126:INFO:CONSOLE:93] "[2025/6/11 15:24:37.603] 
+ request-url: /api/task/tags/completions ; RequestId: 55b857c2-d342-4e3e-833f-49fe97019350", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152437.605355:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152437.631630:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152437.656493:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152438.862381:INFO:CONSOLE:93] "[2025/6/11 15:24:38.862] 
+ request-url: /api/v1/chats/36d0aef9-1286-4047-ae6d-0d6b925c4b78/tags ; RequestId: 5a015b8b-5324-4873-b31e-d3c18df12749", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152438.862997:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152438.878011:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152438.902283:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152439.363946:INFO:CONSOLE:93] "[2025/6/11 15:24:39.363] 
+ request-url: /api/v1/chats/36d0aef9-1286-4047-ae6d-0d6b925c4b78/tags ; RequestId: 0cd24b27-3576-4b60-bfdd-e429262d3b66", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152439.364917:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152439.384919:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152439.409469:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152440.579135:INFO:CONSOLE:93] "[2025/6/11 15:24:40.578] 
+ request-url: /api/v1/chats/36d0aef9-1286-4047-ae6d-0d6b925c4b78/tags ; RequestId: b1f48128-7839-470a-9fd9-b7be2d51e38f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152440.581086:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152440.610007:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152440.634692:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152441.283328:INFO:CONSOLE:93] "[2025/6/11 15:24:41.283] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152441.283528:INFO:CONSOLE:93] "[2025/6/11 15:24:41.283] 
+ request-url: /api/v1/chats/all/tags ; RequestId: ba8b4345-7cff-4fc2-90e6-ead3b21d3e6c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152441.284855:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152441.312493:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152441.319446:INFO:CONSOLE:93] "[2025/6/11 15:24:41.319] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152441.319618:INFO:CONSOLE:93] "[2025/6/11 15:24:41.319] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 6810d5a1-8c0e-473c-9c95-148d9d4b85e3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152441.321086:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152441.338779:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152441.343024:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152453.215863:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152656.852481:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152656.867727:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152656.873958:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152656.882350:INFO:CONSOLE:93] "[2025/6/11 15:26:56.882] 
+ request-url: /api/v1/users/user/settings ; RequestId: ff2fb201-c694-4b4f-a683-c85cd7f1acbd", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152656.883986:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152656.907069:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152727.761416:INFO:CONSOLE:198] "sendAplusEvent clkCreateChat &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152812.668950:INFO:CONSOLE:198] "sendAplusEvent chatGeneration &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=t2t&send_type=enter&feature_config={"thinking_enabled":false}", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152812.669258:INFO:CONSOLE:282] "UserPromoteUserPromoteUserPromoteUserPromote [object Object]", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (282)
+[11972:257390:0611/152812.669994:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152812.671187:INFO:CONSOLE:93] "[2025/6/11 15:28:12.671] 
+ 111-fetch /chats/new", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152812.671225:INFO:CONSOLE:93] "[2025/6/11 15:28:12.671] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152812.679522:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152812.687436:INFO:CONSOLE:93] "[2025/6/11 15:28:12.687] 
+ request-url: /api/v1/chats/new ; RequestId: f5fc84eb-04ed-438b-b223-3ea721aa3662", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152812.692721:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152812.710172:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152812.733419:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152812.963565:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152812.971066:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152812.978614:INFO:CONSOLE:93] "[2025/6/11 15:28:12.978] 
+ request-url: /api/v1/users/user/settings ; RequestId: 9afa7047-c891-40fd-b0d0-26f3a7cc0721", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152812.980402:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152812.990201:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152813.000227:INFO:CONSOLE:472] "[object Object],[object Object],[object Object],[object Object] image-generation,code-interpreter,amap,fire-crawl 999", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/Drm3IsFH.js (472)
+[11972:257390:0611/152813.000831:INFO:CONSOLE:93] "[2025/6/11 15:28:13.000] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152813.001049:INFO:CONSOLE:93] "[2025/6/11 15:28:13.001] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 6c287c1c-02d6-407e-ada1-099de4a225a3", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152813.001591:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152813.018375:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152813.020337:INFO:CONSOLE:93] "[2025/6/11 15:28:13.020] 
+ request-url: /api/chat/completions ; RequestId: b434631d-6d87-4717-ad14-90c0f994a487", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152813.021390:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152813.036937:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152813.044706:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152813.977260:INFO:CONSOLE:198] "sendAplusEvent generationCreateReturn &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&c6=true&chat_id=b4f75483-7831-48ff-9288-d0bfc757d785&msg_type=t2t", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257390:0611/152820.728069:INFO:CONSOLE:194] "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] sendEvent: chunk_info_list", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (194)
+[11972:257390:0611/152820.732926:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152820.763790:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152820.788546:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152821.039432:INFO:CONSOLE:93] "[2025/6/11 15:28:21.039] 
+ request-url: /api/task/title/completions ; RequestId: f51abcd7-8d1f-4289-a375-57af4018a665", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152821.042181:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11978:257464:0611/152821.052643:WARNING:ui/gl/angle_platform_impl.cc:54] SizedMRUCache.h:150 (TrimCache): Overflowed the render pipeline cache limit of 64 elements, removing the least recently used to make room.
+[11972:257390:0611/152821.068312:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152821.092936:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152822.813102:INFO:CONSOLE:93] "[2025/6/11 15:28:22.812] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152822.815306:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152822.844077:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152822.851441:INFO:CONSOLE:93] "[2025/6/11 15:28:22.851] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: f82ad24b-28a9-4302-b627-db6b2ee6e02e", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152822.852909:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152822.872268:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152822.876345:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152823.246836:INFO:CONSOLE:93] "[2025/6/11 15:28:23.246] 
+ request-url: /api/v1/chats/b4f75483-7831-48ff-9288-d0bfc757d785/tags ; RequestId: 8de24362-ceec-492e-9e52-a3cdc8cd3c5f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152823.249117:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152823.281171:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152823.307236:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152823.521343:INFO:CONSOLE:93] "[2025/6/11 15:28:23.521] 
+ request-url: /api/task/tags/completions ; RequestId: 32fba8f0-fd4f-4760-9d01-5a7774c5db9f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152823.522801:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152823.551425:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152823.576180:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152825.270269:INFO:CONSOLE:93] "[2025/6/11 15:28:25.270] 
+ request-url: /api/v1/chats/b4f75483-7831-48ff-9288-d0bfc757d785/tags ; RequestId: 01b476b5-e7cc-45cd-af30-6ea873c99877", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152825.271417:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152825.295674:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152825.320524:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152825.887783:INFO:CONSOLE:93] "[2025/6/11 15:28:25.887] 
+ request-url: /api/v1/chats/b4f75483-7831-48ff-9288-d0bfc757d785/tags ; RequestId: 93615644-5372-4fcb-b950-0c41c5c291ae", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152825.889474:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152825.917805:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152825.942626:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152826.328555:INFO:CONSOLE:93] "[2025/6/11 15:28:26.328] 
+ request-url: /api/v1/chats/b4f75483-7831-48ff-9288-d0bfc757d785/tags ; RequestId: 934e0192-0d01-43b5-85ec-e0c785825ef4", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152826.330593:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152826.360402:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152826.385291:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152826.733305:INFO:CONSOLE:93] "[2025/6/11 15:28:26.732] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152826.733630:INFO:CONSOLE:93] "[2025/6/11 15:28:26.733] 
+ request-url: /api/v1/chats/all/tags ; RequestId: f8154100-efc6-4737-9947-8d8a4843d86f", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152826.735854:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152826.769500:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152826.777213:INFO:CONSOLE:93] "[2025/6/11 15:28:26.777] 
+ 111-!!window.baxiaCommon status true true true", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152826.777348:INFO:CONSOLE:93] "[2025/6/11 15:28:26.777] 
+ request-url: /api/v1/chats/?page=1 ; RequestId: 4402c8ed-2615-4390-bbfe-c518d1bb9e8c", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (93)
+[11972:257390:0611/152826.778841:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/fireyejs/1.231.37/fireyejs.js (1)
+[11972:257390:0611/152826.797222:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152826.801265:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)
+[11972:257390:0611/152847.884334:INFO:CONSOLE:198] "sendAplusEvent clkGenerateMode &typarm1=web&typarm2=779e3414-402f-4fd0-9b03-1b5510e48e01&typarm3=prod&typarm4=qwen_chat&typarm5=product&orgid=tongyi&msg_type=thinking", source: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.111/_app/immutable/chunks/DLn6xWhf.js (198)
+[11972:257437:0611/152908.457105:WARNING:net/dns/dns_config_service_posix.cc:201] Failed to read DnsConfig.
+[11979:257530:0611/152908.457141:WARNING:net/dns/dns_config_service_posix.cc:201] Failed to read DnsConfig.
+[11972:257390:0611/153046.250408:INFO:CONSOLE:1] "Error", source: https://g.alicdn.com/AWSC/et/1.83.8/et_f.js (1)

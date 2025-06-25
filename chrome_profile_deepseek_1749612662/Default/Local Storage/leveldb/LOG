@@ -1,0 +1,5 @@
+2025/06/11-11:31:03.557 336ef Creating DB /Users/wyl/Desktop/pythonProject_3/chrome_profile_deepseek_1749612662/Default/Local Storage/leveldb since it was missing.
+2025/06/11-11:31:03.566 336ef Reusing MANIFEST /Users/wyl/Desktop/pythonProject_3/chrome_profile_deepseek_1749612662/Default/Local Storage/leveldb/MANIFEST-000001
+2025/06/11-11:31:16.066 336f3 Level-0 table #5: started
+2025/06/11-11:31:16.070 336f3 Level-0 table #5: 130426 bytes OK
+2025/06/11-11:31:16.072 336f3 Delete type=0 #3

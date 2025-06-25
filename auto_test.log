@@ -1,46 +1,107 @@
-2025-06-03 11:17:25,544 - INFO - ====== WebDriver manager ======
-2025-06-03 11:17:25,691 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:17:25,989 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:17:26,226 - INFO - There is no [mac64] chromedriver "136.0.7103.113" for browser google-chrome "136.0.7103" in cache
-2025-06-03 11:17:26,237 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:17:26,807 - INFO - WebDriver version 136.0.7103.113 selected
-2025-06-03 11:17:26,809 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
-2025-06-03 11:17:26,810 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
-2025-06-03 11:17:28,435 - INFO - Driver downloading response is 200
-2025-06-03 11:17:56,536 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:17:56,865 - INFO - Driver has been saved in cache [/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113]
-2025-06-03 11:17:56,870 - ERROR - Chrome驱动初始化失败: [Errno 8] Exec format error: '/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
-2025-06-03 11:19:38,457 - INFO - ====== WebDriver manager ======
-2025-06-03 11:19:38,565 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:19:38,841 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:19:39,139 - INFO - Driver [/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
-2025-06-03 11:19:39,145 - ERROR - Chrome驱动初始化失败: [Errno 8] Exec format error: '/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
-2025-06-03 11:20:43,892 - ERROR - Chrome驱动初始化失败: __init__() got an unexpected keyword argument 'os_type'
-2025-06-03 11:20:43,892 - INFO - ====== WebDriver manager ======
-2025-06-03 11:20:43,939 - INFO - Get LATEST chromedriver version for chromium
-2025-06-03 11:20:43,939 - ERROR - 备用方法初始化也失败: 'NoneType' object has no attribute 'split'
-2025-06-03 11:23:03,985 - INFO - ====== WebDriver manager ======
-2025-06-03 11:23:04,092 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:23:04,354 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:23:04,601 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:23:05,143 - INFO - WebDriver version 136.0.7103.113 selected
-2025-06-03 11:23:05,145 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
-2025-06-03 11:23:05,146 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
-2025-06-03 11:23:05,635 - INFO - Driver downloading response is 200
-2025-06-03 11:23:50,878 - INFO - Get LATEST chromedriver version for google-chrome
-2025-06-03 11:23:51,326 - INFO - Driver has been saved in cache [/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113]
-2025-06-03 11:23:51,330 - ERROR - Chrome驱动初始化失败: [Errno 8] Exec format error: '/Users/wyl/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver'
-2025-06-03 11:23:51,367 - ERROR - 备用方法初始化也失败: __init__() got an unexpected keyword argument 'version'
-2025-06-03 11:41:01,279 - ERROR - Chrome驱动初始化失败: Message: Service /Users/wyl/Downloads/chromedriver-mac-arm64/chromedriver unexpectedly exited. Status code was: -9
-
-2025-06-03 11:41:01,703 - ERROR - 备用方法初始化也失败: 无法获取或下载ChromeDriver
-2025-06-03 11:48:59,396 - ERROR - Chrome驱动初始化失败: [Errno 2] No such file or directory: '/Users/wyl/Downloads/chromedriver-mac-arm64'
-2025-06-03 11:48:59,751 - ERROR - 备用方法初始化也失败: 无法获取或下载ChromeDriver
-2025-06-03 11:57:53,529 - ERROR - Chrome驱动初始化失败: [Errno 2] No such file or directory: '/Users/wyl/Downloads/chromedriver-mac-arm64'
-2025-06-03 11:57:53,576 - ERROR - 备用方法初始化也失败: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /chrome-for-testing-public/137.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105b10b80>: Failed to resolve 'storage.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
-2025-06-03 12:53:27,285 - INFO - 成功连接到本地运行的 ChromeDriver
-2025-06-03 12:53:27,286 - ERROR - 加载测试数据失败: [Errno 2] No such file or directory: 'data/fusion_results_all.json'
-2025-06-03 12:53:27,286 - ERROR - 测试过程发生错误: [Errno 2] No such file or directory: 'data/fusion_results_all.json'
-2025-06-03 12:54:52,159 - INFO - 成功连接到本地运行的 ChromeDriver
-2025-06-03 12:54:52,176 - INFO - 成功加载 0 个测试用例
-2025-06-03 12:54:52,177 - INFO - 测试结果已保存到: data/model_test_results_20250603_125452.json
+2025-06-17 18:10:18,677 - INFO - 成功加载 517 个测试用例
+2025-06-17 18:10:18,679 - INFO - 测试用例 1/5: 7**(3*cot(-α + 2*pi)**((a - b)*(a + b) + 2)/2) = 7**(3*cot(-α + 2*pi)**(a**2 - b**2 + 2)/2)
+2025-06-17 18:10:18,679 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:20,684 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:22,688 - INFO - 测试结果已保存到: data/model_test_results_20250617_181022.json
+2025-06-17 18:10:22,688 - INFO - 已保存 1 个测试用例的结果
+2025-06-17 18:10:22,688 - INFO - 测试用例 2/5: 18*cot(r + pi/2)**(sin(-r)**((a - b)*(a + b)) + 4)/5 = 18*cot(r + pi/2)**(sin(-r)**(a**2 - b**2) + 4)/5
+2025-06-17 18:10:22,689 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:24,690 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:26,696 - INFO - 测试结果已保存到: data/model_test_results_20250617_181026.json
+2025-06-17 18:10:26,696 - INFO - 已保存 2 个测试用例的结果
+2025-06-17 18:10:26,697 - INFO - 测试用例 3/5: 9*7**(6**((a - π)*(a + π)) - 7) = 9*7**(6**(a**2 - π**2) - 7)
+2025-06-17 18:10:26,697 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:28,701 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:30,705 - INFO - 测试结果已保存到: data/model_test_results_20250617_181030.json
+2025-06-17 18:10:30,705 - INFO - 已保存 3 个测试用例的结果
+2025-06-17 18:10:30,705 - INFO - 测试用例 4/5: (5*b/4 + 5*b/4)*(-1*9*b + 9*b)/6 + 5/12 = -1*15*b**2/8 + 15*b**2/8 + 5/12
+2025-06-17 18:10:30,705 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:32,711 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:34,717 - INFO - 测试结果已保存到: data/model_test_results_20250617_181034.json
+2025-06-17 18:10:34,718 - INFO - 已保存 4 个测试用例的结果
+2025-06-17 18:10:34,718 - INFO - 测试用例 5/5: 2*6**(tan(α + pi)**((-b + Ω)*(b + Ω)))/3 - 1 = 2*6**(tan(α + pi)**(-b**2 + Ω**2))/3 - 1
+2025-06-17 18:10:34,718 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:36,723 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-17 18:10:38,728 - INFO - 测试结果已保存到: data/model_test_results_20250617_181038.json
+2025-06-17 18:10:38,728 - INFO - 已保存 5 个测试用例的结果
+2025-06-17 18:10:38,729 - INFO - 测试结果已保存到: data/model_test_results_20250617_181038.json
+2025-06-17 18:10:38,729 - INFO - 测试完成
+2025-06-17 18:11:25,836 - INFO - 成功加载 517 个测试用例
+2025-06-17 18:11:25,837 - INFO - 测试用例 1/5: 7**(3*cot(-α + 2*pi)**((a - b)*(a + b) + 2)/2) = 7**(3*cot(-α + 2*pi)**(a**2 - b**2 + 2)/2)
+2025-06-17 18:11:26,329 - ERROR - Qwen API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:28,368 - ERROR - DeepSeek API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:30,375 - INFO - 测试结果已保存到: data/model_test_results_20250617_181130.json
+2025-06-17 18:11:30,375 - INFO - 已保存 1 个测试用例的结果
+2025-06-17 18:11:30,375 - INFO - 测试用例 2/5: 18*cot(r + pi/2)**(sin(-r)**((a - b)*(a + b)) + 4)/5 = 18*cot(r + pi/2)**(sin(-r)**(a**2 - b**2) + 4)/5
+2025-06-17 18:11:30,410 - ERROR - Qwen API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:32,439 - ERROR - DeepSeek API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:34,445 - INFO - 测试结果已保存到: data/model_test_results_20250617_181134.json
+2025-06-17 18:11:34,446 - INFO - 已保存 2 个测试用例的结果
+2025-06-17 18:11:34,446 - INFO - 测试用例 3/5: 9*7**(6**((a - π)*(a + π)) - 7) = 9*7**(6**(a**2 - π**2) - 7)
+2025-06-17 18:11:34,484 - ERROR - Qwen API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:36,527 - ERROR - DeepSeek API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:38,534 - INFO - 测试结果已保存到: data/model_test_results_20250617_181138.json
+2025-06-17 18:11:38,535 - INFO - 已保存 3 个测试用例的结果
+2025-06-17 18:11:38,535 - INFO - 测试用例 4/5: (5*b/4 + 5*b/4)*(-1*9*b + 9*b)/6 + 5/12 = -1*15*b**2/8 + 15*b**2/8 + 5/12
+2025-06-17 18:11:38,570 - ERROR - Qwen API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:40,611 - ERROR - DeepSeek API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:42,617 - INFO - 测试结果已保存到: data/model_test_results_20250617_181142.json
+2025-06-17 18:11:42,617 - INFO - 已保存 4 个测试用例的结果
+2025-06-17 18:11:42,617 - INFO - 测试用例 5/5: 2*6**(tan(α + pi)**((-b + Ω)*(b + Ω)))/3 - 1 = 2*6**(tan(α + pi)**(-b**2 + Ω**2))/3 - 1
+2025-06-17 18:11:42,643 - ERROR - Qwen API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:44,685 - ERROR - DeepSeek API测试失败: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+2025-06-17 18:11:46,692 - INFO - 测试结果已保存到: data/model_test_results_20250617_181146.json
+2025-06-17 18:11:46,692 - INFO - 已保存 5 个测试用例的结果
+2025-06-17 18:11:46,693 - INFO - 测试结果已保存到: data/model_test_results_20250617_181146.json
+2025-06-17 18:11:46,693 - INFO - 测试完成
+2025-06-18 12:42:31,697 - INFO - 成功加载 517 个测试用例
+2025-06-18 12:42:31,698 - INFO - 测试用例 1/5: 7**(3*cot(-α + 2*pi)**((a - b)*(a + b) + 2)/2) = 7**(3*cot(-α + 2*pi)**(a**2 - b**2 + 2)/2)
+2025-06-18 12:42:52,350 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:42:54,359 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 12:42:56,368 - INFO - 测试结果已保存到: data/model_test_results_20250618_124256.json
+2025-06-18 12:42:56,368 - INFO - 已保存 1 个测试用例的结果
+2025-06-18 12:42:56,368 - INFO - 测试用例 2/5: 18*cot(r + pi/2)**(sin(-r)**((a - b)*(a + b)) + 4)/5 = 18*cot(r + pi/2)**(sin(-r)**(a**2 - b**2) + 4)/5
+2025-06-18 12:43:09,822 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:43:11,829 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 12:43:13,834 - INFO - 测试结果已保存到: data/model_test_results_20250618_124313.json
+2025-06-18 12:43:13,834 - INFO - 已保存 2 个测试用例的结果
+2025-06-18 12:43:13,834 - INFO - 测试用例 3/5: 9*7**(6**((a - π)*(a + π)) - 7) = 9*7**(6**(a**2 - π**2) - 7)
+2025-06-18 12:43:32,249 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:43:34,256 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 12:43:36,264 - INFO - 测试结果已保存到: data/model_test_results_20250618_124336.json
+2025-06-18 12:43:36,264 - INFO - 已保存 3 个测试用例的结果
+2025-06-18 12:43:36,265 - INFO - 测试用例 4/5: (5*b/4 + 5*b/4)*(-1*9*b + 9*b)/6 + 5/12 = -1*15*b**2/8 + 15*b**2/8 + 5/12
+2025-06-18 12:44:01,873 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:44:03,878 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 12:44:05,887 - INFO - 测试结果已保存到: data/model_test_results_20250618_124405.json
+2025-06-18 12:44:05,887 - INFO - 已保存 4 个测试用例的结果
+2025-06-18 12:44:05,887 - INFO - 测试用例 5/5: 2*6**(tan(α + pi)**((-b + Ω)*(b + Ω)))/3 - 1 = 2*6**(tan(α + pi)**(-b**2 + Ω**2))/3 - 1
+2025-06-18 12:44:28,372 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:44:30,378 - ERROR - DeepSeek API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 12:44:32,380 - INFO - 测试结果已保存到: data/model_test_results_20250618_124432.json
+2025-06-18 12:44:32,381 - INFO - 已保存 5 个测试用例的结果
+2025-06-18 12:44:32,382 - INFO - 测试结果已保存到: data/model_test_results_20250618_124432.json
+2025-06-18 12:44:32,382 - INFO - 测试完成
+2025-06-18 18:08:43,577 - INFO - 成功加载 517 个测试用例
+2025-06-18 18:08:43,578 - INFO - 测试用例 1/5: 7**(3*cot(-α + 2*pi)**((a - b)*(a + b) + 2)/2) = 7**(3*cot(-α + 2*pi)**(a**2 - b**2 + 2)/2)
+2025-06-18 18:08:43,578 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 18:08:46,042 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-18 18:08:46,044 - ERROR - DeepSeek API测试失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****bdbe is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-06-18 18:08:48,048 - INFO - 测试结果已保存到: data/model_test_results_20250618_180848.json
+2025-06-18 18:08:48,048 - INFO - 已保存 1 个测试用例的结果
+2025-06-18 18:08:48,048 - INFO - 测试用例 2/5: 18*cot(r + pi/2)**(sin(-r)**((a - b)*(a + b)) + 4)/5 = 18*cot(r + pi/2)**(sin(-r)**(a**2 - b**2) + 4)/5
+2025-06-18 18:08:48,048 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 18:08:50,205 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-18 18:08:50,206 - ERROR - DeepSeek API测试失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****bdbe is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-06-18 18:08:52,213 - INFO - 测试结果已保存到: data/model_test_results_20250618_180852.json
+2025-06-18 18:08:52,213 - INFO - 已保存 2 个测试用例的结果
+2025-06-18 18:08:52,213 - INFO - 测试用例 3/5: 9*7**(6**((a - π)*(a + π)) - 7) = 9*7**(6**(a**2 - π**2) - 7)
+2025-06-18 18:08:52,213 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 18:08:54,379 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-18 18:08:54,379 - ERROR - DeepSeek API测试失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****bdbe is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2025-06-18 18:08:56,383 - INFO - 测试结果已保存到: data/model_test_results_20250618_180856.json
+2025-06-18 18:08:56,384 - INFO - 已保存 3 个测试用例的结果
+2025-06-18 18:08:56,384 - INFO - 测试用例 4/5: (5*b/4 + 5*b/4)*(-1*9*b + 9*b)/6 + 5/12 = -1*15*b**2/8 + 15*b**2/8 + 5/12
+2025-06-18 18:08:56,384 - ERROR - Qwen API测试失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-06-18 18:08:58,549 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-18 18:08:58,550 - ERROR - DeepSeek API测试失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****bdbe is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}

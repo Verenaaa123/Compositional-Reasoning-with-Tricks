@@ -4,6 +4,7 @@ import argparse
 import json
 import sympy
 import random
+import os
 
 from trick_rules import *
 from fusion.operations import Operations
@@ -77,7 +78,7 @@ def tricks_construction():
         
         print(f"Finish all construct of {rule_name}")
     
-    filepath = '/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
+    filepath = os.path.join(os.path.dirname(__file__), 'data/composition/construct_result_all.json')
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(all_rules_results, f, ensure_ascii=False, indent=4)
     print(f"All constructed results saved in  {filepath}")
@@ -85,7 +86,7 @@ def tricks_construction():
 
 def tricks_fusion(trick_name=None):
     ops = Operations()
-    construction_file = '/Users/wyl/Desktop/pythonProject_3/data/composition/construct_result_all.json'
+    construction_file = os.path.join(os.path.dirname(__file__), 'data/composition/construct_result_all.json')
     
     # 读取构造结果文件
     with open(construction_file, 'r', encoding='utf-8') as f:
@@ -140,9 +141,9 @@ def tricks_fusion(trick_name=None):
         }
     
     # 保存结果文件
-    file_dir = '/Users/wyl/Desktop/pythonProject_3/data/tricks'
+    file_dir = os.path.join(os.path.dirname(__file__), 'data/tricks')
     filename = 'fusion_results_all.json' 
-    filepath = f'{file_dir}/{filename}'
+    filepath = os.path.join(file_dir, filename)
 
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump({"results": results}, f, ensure_ascii=False, indent=4)

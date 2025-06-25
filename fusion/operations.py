@@ -109,27 +109,64 @@ class Operations():
 
     #表达式展开
     def find_right_operand(self, expr):
-        if isinstance(expr, tuple):
-            expr = expr[0]
-        if not isinstance(expr, sp.Eq):
-            expr = self.get_sp_expr(expr)
-        
         try:
-            # 只对右侧表达式进行展开，而不是整个等式
-            expanded_rhs = sp.expand(expr.rhs, locals=self.local_dict)
-            # 构造新的等式
-            return f"{str(expr.lhs)} = {str(expanded_rhs)}"
-        except:
-            # 如果直接展开失败，返回原始等式
-            return f"{str(expr.lhs)} = {str(expr.rhs)}"
+            if isinstance(expr, (list, tuple)):
+                expr = expr[0]
+            
+            formula_str = self.get_str_expr(expr)
+            if '=' in formula_str:
+                sp_expr = self.get_sp_expr(formula_str)
+                if sp_expr is None:
+                    return formula_str
+                
+                orig_left_expr = sp_expr.lhs
+                orig_right_expr = sp_expr.rhs
+                
+                # 随机选择一个变量进行替换
+                variables = list(orig_right_expr.free_symbols)
+                if not variables:
+                    return formula_str
+                
+                selected_var = random.choice(variables)
+                new_value = random.randint(1, 100)
+                
+                new_right_expr = orig_right_expr.subs(selected_var, new_value)
+                new_formula = f"{sp.sstr(orig_left_expr)} = {sp.sstr(new_right_expr)}"
+                
+                return new_formula
+            
+            return formula_str
+        except Exception as e:
+            # 如果解析失败，返回原始表达式
+            return str(expr)
 
 
     # 合并同类项
     def combining_similar_terms(self, expr):
-        expr_sp = self.get_sp_expr(expr)
-        combined = sp.collect(expr_sp.rhs, self.variable_library)
-        # 确保返回标准等式格式
-        return f"{str(expr_sp.lhs)} = {str(combined)}"
+        try:
+            # 检查表达式是否过于复杂
+            expr_str = str(expr)
+            if len(expr_str) > 500:
+                return expr_str
+            
+            expr_sp = self.get_sp_expr(expr)
+            if expr_sp is None:
+                return str(expr)
+            
+            # 限制变量库的大小，避免复杂的收集操作
+            limited_vars = list(self.variable_library)[:10]  # 只使用前10个变量
+            
+            try:
+                combined = sp.collect(expr_sp.rhs, limited_vars)
+                # 确保返回标准等式格式
+                return f"{str(expr_sp.lhs)} = {str(combined)}"
+            except Exception as e:
+                # 如果收集失败，返回原始表达式
+                return f"{str(expr_sp.lhs)} = {str(expr_sp.rhs)}"
+                
+        except Exception as e:
+            # 如果解析失败，返回原始表达式
+            return str(expr)
 
 
     #拼接
@@ -232,70 +269,113 @@ class Operations():
         
 
     def replace_with_formula(self, formula, all_tricks):
-        formula_str = self.get_str_expr(formula)
-        if '=' in formula_str:
-            sp_expr = self.get_sp_expr(formula_str)
-            orig_left_expr = sp_expr.lhs
-            orig_right_expr = sp_expr.rhs
-        else:
-            orig_expr = sp.sympify(formula_str, locals=self.local_dict)
-            orig_left_expr = orig_expr
-            orig_right_expr = sp.Integer(0)
-
-        valid_replacements = []
-        orig_right_vars = orig_right_expr.free_symbols
-
-        # 遍历所有技巧公式的右侧
-        for trick_formula in all_tricks:
-            if '=' in trick_formula:
-                _, trick_right = trick_formula.split('=', 1)
-                trick_right_expr = sp.sympify(trick_right.strip(), locals=self.local_dict)
-                # 使用 UnevaluatedExpr 包裹表达式以保留括号
-                trick_right_paren = UnevaluatedExpr(trick_right_expr)
-
-                for var in orig_right_vars:
-                    # 替换变量为带括号的表达式
-                    new_right = orig_right_expr.subs(var, trick_right_paren)
-                    # 转换为字符串时自动添加括号
-                    new_formula = f"{sp.sstr(orig_left_expr)} = {sp.sstr(new_right)}"
-                    valid_replacements.append(new_formula)
-        
-        return random.choice(valid_replacements) if valid_replacements else formula_str
+        try:
+            formula_str = self.get_str_expr(formula)
+            if '=' not in formula_str:
+                return formula_str
+                
+            # 简化处理：直接进行字符串替换而不是sympy计算
+            left_part, right_part = formula_str.split('=', 1)
+            
+            # 检查右侧是否过于复杂
+            if len(right_part) > 200:  # 如果右侧太长，跳过替换
+                return formula_str
+            
+            valid_replacements = []
+            
+            # 从all_tricks中选择简单的公式进行替换
+            simple_tricks = []
+            for trick_formula in all_tricks:
+                if '=' in trick_formula:
+                    _, trick_right = trick_formula.split('=', 1)
+                    # 只选择简单的右侧表达式
+                    if len(trick_right.strip()) < 50:
+                        simple_tricks.append(trick_formula)
+            
+            if not simple_tricks:
+                return formula_str
+            
+            # 随机选择1-2个简单公式进行替换
+            num_replacements = min(2, len(simple_tricks))
+            selected_tricks = random.sample(simple_tricks, num_replacements)
+            
+            for trick_formula in selected_tricks:
+                try:
+                    _, trick_right = trick_formula.split('=', 1)
+                    trick_right = trick_right.strip()
+                    
+                    # 简单的字符串替换：将右侧的变量替换为新的表达式
+                    new_right = right_part
+                    # 替换常见的变量
+                    for var in ['a', 'b', 'α', 'β']:
+                        if var in new_right and var in trick_right:
+                            # 避免无限递归，只替换一次
+                            new_right = new_right.replace(var, f"({trick_right})", 1)
+                            break
+                    
+                    if new_right != right_part:
+                        new_formula = f"{left_part.strip()} = {new_right.strip()}"
+                        valid_replacements.append(new_formula)
+                        
+                except Exception as e:
+                    # 如果单个替换失败，继续下一个
+                    continue
+            
+            return random.choice(valid_replacements) if valid_replacements else formula_str
+            
+        except Exception as e:
+            # 如果解析失败，返回原始表达式
+            return str(formula)
             
 
     def power_transform(self, formula, all_tricks):
-        
-        if isinstance(formula, (list, tuple)):
-            formula = formula[0]
-        
-        # 获取输入等式的字符串表示
-        formula_str = self.get_str_expr(formula)
-        
-        # 随机选择转换方式
-        transform_type = random.choice(['number', 'trick'])
-        
-        if transform_type == 'number':
-            # 随机选择一个2到10之间的数字作为底数
-            base = random.randint(2, 10)
-            # 构造新的等式
-            new_formula = f"{base}^{formula_str}"
-        else:
-            # 从all_tricks中随机选择一个等式
-            valid_tricks = [trick for trick in all_tricks.keys() if '=' in trick]
-            if not valid_tricks:
+        try:
+            if isinstance(formula, (list, tuple)):
+                formula = formula[0]
+            
+            # 获取输入等式的字符串表示
+            formula_str = self.get_str_expr(formula)
+            
+            # 检查公式是否过于复杂
+            if len(formula_str) > 300:
                 return formula_str
             
-            selected_trick = random.choice(valid_tricks)
-            # 只使用等式的右侧作为底数
-            base = selected_trick.split('=', 1)[1].strip()
-            # 构造新的等式
-            new_formula = f"({base})^{formula_str}"
-        
-        return new_formula
+            # 随机选择转换方式
+            transform_type = random.choice(['number', 'trick'])
+            
+            if transform_type == 'number':
+                # 随机选择一个2到10之间的数字作为底数
+                base = random.randint(2, 10)
+                # 构造新的等式
+                new_formula = f"{base}^{formula_str}"
+            else:
+                # 从all_tricks中随机选择一个简单的等式
+                valid_tricks = []
+                for trick in all_tricks.keys():
+                    if '=' in trick:
+                        _, trick_right = trick.split('=', 1)
+                        # 只选择简单的右侧表达式
+                        if len(trick_right.strip()) < 30:
+                            valid_tricks.append(trick)
+                
+                if not valid_tricks:
+                    return formula_str
+                
+                selected_trick = random.choice(valid_tricks)
+                # 只使用等式的右侧作为底数
+                base = selected_trick.split('=', 1)[1].strip()
+                # 构造新的等式
+                new_formula = f"({base})^{formula_str}"
+            
+            return new_formula
+            
+        except Exception as e:
+            # 如果处理失败，返回原始公式
+            return str(formula)
 
     def execute_operations(self, user_formula, all_tricks, complexity):
         results = {}
-        times = random.randint(1, 10)
+        times = random.randint(1, 5)  # 减少操作次数，提高性能
         
         operation_counters = {
             'find_right_operand': 0,
@@ -308,78 +388,149 @@ class Operations():
         
         # 检查是否为纯数字表达式
         def is_numeric(expr_str):
-            cleaned = expr_str.replace(' ', '').replace('+', '').replace('-', '').replace('*', '').replace('/', '').replace('=', '').replace('**', '').replace('*', '').replace('(', '').replace(')', '')
             try:
+                cleaned = expr_str.replace(' ', '').replace('+', '').replace('-', '').replace('*', '').replace('/', '').replace('=', '').replace('**', '').replace('*', '').replace('(', '').replace(')', '')
                 float(cleaned)
                 return True
-            except ValueError:
+            except (ValueError, AttributeError):
                 return False
 
         if is_numeric(str(user_formula)):
             return results
         
         for i in range(times):
-            result = {
-                "formula": {
-                    "left": None,
-                    "right": None,
-                },
-                'fusion_operands': [],
-                'composition_complexity': 0,
-                'fusion_complexity': 0,
-            }
-            
-            # 解析公式
-            formula = self.formula_manipulator.parse_user_formula(user_formula)
-            if formula is None:
+            try:
+                result = {
+                    "formula": {
+                        "left": None,
+                        "right": None,
+                    },
+                    'fusion_operands': [],
+                    'composition_complexity': 0,
+                    'fusion_complexity': 0,
+                }
+                
+                # 解析公式
+                formula = self.formula_manipulator.parse_user_formula(user_formula)
+                if formula is None:
+                    continue
+                
+                result['formula']['left'] = str(self.formula_manipulator.separate_left(user_formula))
+                result['formula']['right'] = str(self.formula_manipulator.separate_right(user_formula))
+                
+                # 第一阶段：确保至少执行三次concatenate_formulas
+                for _ in range(3):
+                    try:
+                        if not is_numeric(str(formula)):
+                            operand_result = self.concatenate_formulas(formula, all_tricks, results)
+                            if operand_result is not None and operand_result != str(formula):
+                                formatted_result = self.get_str_expr(operand_result)
+                                # 检查结果是否过于复杂
+                                if len(formatted_result) < 1000:  # 限制结果长度
+                                    result['fusion_operands'].append({
+                                        "operation": 2,  # concatenate_formulas
+                                        "result": formatted_result
+                                    })
+                                    operation_counters['concatenate_formulas'] += 1
+                                    formula = operand_result  # 更新当前公式
+                    except Exception as e:
+                        # 如果操作失败，继续下一个操作
+                        continue
+                
+                # 第二阶段：确保至少执行三次replace_with_formula
+                for _ in range(3):
+                    try:
+                        operand_result = self.replace_with_formula(formula, all_tricks)
+                        if operand_result is not None and operand_result != str(formula):
+                            formatted_result = self.get_str_expr(operand_result)
+                            # 检查结果是否过于复杂
+                            if len(formatted_result) < 1000:  # 限制结果长度
+                                result['fusion_operands'].append({
+                                    "operation": 4,  # replace_with_formula
+                                    "result": formatted_result
+                                })
+                                operation_counters['replace_formula'] += 1
+                                formula = operand_result  # 更新当前公式
+                    except Exception as e:
+                        # 如果操作失败，继续下一个操作
+                        continue
+                
+                # 第三阶段：确保至少执行三次power_transform
+                for _ in range(3):
+                    try:
+                        operand_result = self.power_transform(formula, all_tricks)
+                        if operand_result is not None and operand_result != str(formula):
+                            formatted_result = self.get_str_expr(operand_result)
+                            # 检查结果是否过于复杂
+                            if len(formatted_result) < 1000:  # 限制结果长度
+                                result['fusion_operands'].append({
+                                    "operation": 6,  # power_transform
+                                    "result": formatted_result
+                                })
+                                operation_counters['power_transform'] += 1
+                                formula = operand_result  # 更新当前公式
+                    except Exception as e:
+                        # 如果操作失败，继续下一个操作
+                        continue
+                
+                # 第四阶段：随机执行其他操作（除了combining_similar_terms）
+                other_operations = [1, 3]  # find_right_operand, generate_formulas
+                for _ in range(random.randint(0, 1)):  # 进一步减少随机操作次数
+                    try:
+                        operation = random.choice(other_operations)
+                        operand_result = None
+                        
+                        if operation == 1:  # find_right_operand
+                            if not is_numeric(str(formula)):
+                                operand_result = self.find_right_operand(formula)
+                                operation_counters['find_right_operand'] += 1
+                        elif operation == 3:  # generate_formulas
+                            if not is_numeric(str(formula)):
+                                operand_result = self.generate_formulas(formula)
+                                operation_counters['generate_formulas'] += 1
+                        
+                        if operand_result is not None and operand_result != str(formula):
+                            formatted_result = self.get_str_expr(operand_result)
+                            # 检查结果是否过于复杂
+                            if len(formatted_result) < 1000:  # 限制结果长度
+                                result['fusion_operands'].append({
+                                    "operation": operation,
+                                    "result": formatted_result
+                                })
+                                formula = operand_result  # 更新当前公式
+                    except Exception as e:
+                        # 如果操作失败，继续下一个操作
+                        continue
+                
+                # 最后一步：执行combining_similar_terms
+                try:
+                    operand_result = self.combining_similar_terms(formula)
+                    if operand_result is not None:
+                        formatted_result = self.get_str_expr(operand_result)
+                        # 检查结果是否过于复杂
+                        if len(formatted_result) < 1000:  # 限制结果长度
+                            result['fusion_operands'].append({
+                                "operation": 5,  # combining_similar_terms
+                                "result": formatted_result
+                            })
+                            operation_counters['combining_similar_terms'] += 1
+                except Exception as e:
+                    # 如果操作失败，跳过这一步
+                    pass
+                
+                # 计算复杂度
+                result['composition_complexity'] = complexity
+                result['fusion_complexity'] = len(result['fusion_operands'])
+                
+                # 只有当有操作结果时才添加到results中
+                if result['fusion_operands']:
+                    results[f"result_{i}"] = result
+                    
+            except Exception as e:
+                # 如果整个处理过程失败，继续下一个
                 continue
-            
-            result['formula']['left'] = str(self.formula_manipulator.separate_left(user_formula))
-            result['formula']['right'] = str(self.formula_manipulator.separate_right(user_formula))
-      
-            operation = random.choice(self.operations_list)
-            operand_result = None
-            
-            if operation == 1:
-                if not is_numeric(str(formula)):
-                    operand_result = self.find_right_operand(formula)
-                    operation_counters['find_right_operand'] += 1
-            elif operation == 2:
-                if not is_numeric(str(formula)):
-                    operand_result = self.concatenate_formulas(formula, all_tricks, results)
-                    operation_counters['concatenate_formulas'] += 1
-            elif operation == 3:
-                if not is_numeric(str(formula)):
-                    operand_result = self.generate_formulas(formula)
-                    operation_counters['generate_formulas'] += 1
-            elif operation == 4:
-                operand_result = self.replace_with_formula(formula, all_tricks)
-                operation_counters['replace_formula'] += 1
-            elif operation == 5:
-                operand_result = self.combining_similar_terms(formula)
-                operation_counters['combining_similar_terms'] += 1
-            elif operation == 6:
-                operand_result = self.power_transform(formula, all_tricks)
-                operation_counters['power_transform'] += 1
-            
-            if operand_result is not None:
-                # 确保结果经过 get_str_expr 处理
-                formatted_result = self.get_str_expr(operand_result)
-                result['fusion_operands'].append({
-                    "operation": operation,
-                    "result": formatted_result
-                })
-
-            result['fusion_complexity'] = operation_counters.copy()
-            results[str(i)] = result
-            # 处理 complexity 为 None 的情况
-            if complexity is None:
-                complexity = 0
-            result['composition_complexity'] = complexity + result['composition_complexity']
-        return results
-        # 此处需要修改
-        # complexity中存在等式只有单侧数据，需要排查原因
         
+        return results
 
 
     # def get_counters(self):

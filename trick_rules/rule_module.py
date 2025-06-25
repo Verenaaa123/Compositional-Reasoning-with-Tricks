@@ -1,9 +1,5 @@
 import sympy as sp
-from sympy import factor
-from sympy.abc import alpha, beta,gamma, delta, epsilon, zeta, eta, theta,iota, kappa, mu, nu, xi, omicron, pi, rho,sigma, tau, upsilon, phi, chi, psi, omega
-
 import random
-from sympy import Poly
 import re
 from thefuzz import fuzz 
 import sys
@@ -678,8 +674,8 @@ class FormulaManipulator:
                 base = trick.split('=')[0].strip()
             else:
                 base = trick.strip()
-            # 构造新的等式，左右两侧分别进行幂次处理
-            new_formula = f"({base})**({lhs_str}) = ({base})**({rhs_str})"
+            # 构造新的等式，左右两侧分别作为底数
+            new_formula = f"({lhs_str})**({base}) = ({rhs_str})**({base})"
         
         return new_formula
 

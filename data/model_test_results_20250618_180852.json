@@ -1,0 +1,10 @@
+[
+  {
+    "formula": "7**(3*cot(-α + 2*pi)**((a - b)*(a + b) + 2)/2) = 7**(3*cot(-α + 2*pi)**(a**2 - b**2 + 2)/2)",
+    "model_responses": []
+  },
+  {
+    "formula": "18*cot(r + pi/2)**(sin(-r)**((a - b)*(a + b)) + 4)/5 = 18*cot(r + pi/2)**(sin(-r)**(a**2 - b**2) + 4)/5",
+    "model_responses": []
+  }
+]
